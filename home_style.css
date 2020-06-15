@@ -10,16 +10,20 @@
     color: white;
 }
 
-nav{
-    font-size: 22px;
+.nav{
+    font-size: 20px!important;
 }
 
-nav a{
-    color: blue!important;
+a.navigationItem{
+    color:goldenrod!important;
 }
 
 a:hover{
     color: goldenrod!important;
+}
+
+a.phoneNumber{
+    font-size: 27px;;
 }
 
 .topBarSpacing{
