@@ -1,0 +1,23 @@
+#topHeader{
+    background-color: #432356;
+}
+
+#title{
+    color: goldenrod;
+}
+
+#supportTitle{
+    color: white;
+}
+
+nav{
+    font-size: 22px;
+}
+
+nav a{
+    color: blue!important;
+}
+
+a:hover{
+    color: goldenrod!important;
+}
