@@ -17,6 +17,10 @@
     color: rgb(255, 179, 38);
 }
 
+.font-bold{
+    font-weight: bold;
+}
+
 .font-grey{
     color: whitesmoke;
 }
@@ -47,13 +51,29 @@ a.phoneNumber{
     color: white;
 }
 
+.topBarSpacing{
+    height: 5px;
+}
+
 @media(min-width: 576px) {
     .topPhoneSize{
         font-size: 23px;
     }
+}
+
+@media(min-width: 1200px){
+    .topBarSpacing{
+        height: 50px;
+    }
+}
+
+.carousel .item{
+    max-height: 400px;
+}
+
+.center-cropped {
+    object-fit: ; /* Do not scale the image */
+    object-position: center; /* Center the image within the element */
   }
 
 
-.topBarSpacing{
-    height: 35px;
-}
