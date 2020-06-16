@@ -30,40 +30,58 @@
 }
 
 .nav{
-    font-size: 20px!important;
+    font-size: 21px!important;
+    transition: font-size 0.2s;
 }
-
+.nav-tabs.nav-justified>li>a{
+    border-bottom: none!important;
+    border-radius: none!important;
+}
 .nav > .nav-item > a.navigationItem:hover,
 .nav > .nav-item > a.navigationItem:focus {
     color: rgb(209, 175, 24)!important;
-    background-color: #ffffff!important;
+    background-color: #6e124f!important;
+    border: none!important;
+    font-size: 25px!important;
+
+    transition: color 0.2s, font-size 0.2s;
 }
 
 a.navigationItem{
     color: white!important;
-}
-
-.topPhoneSize{
-    font-size: 20px;
+    transition: color 0.2s;
 }
 
 a.phoneNumber{
     color: white;
 }
 
+/*for smaller sizes*/
 .topBarSpacing{
-    height: 5px;
+    height: 0px;
 }
 
+.topPhoneSize{
+    font-size: 20px;
+}
+
+.spacingDiv1{
+    height: 0px;
+}
+
+/*is used generally*/
 @media(min-width: 576px) {
     .topPhoneSize{
-        font-size: 23px;
+        font-size: 35px;
     }
 }
 
 @media(min-width: 1200px){
     .topBarSpacing{
-        height: 50px;
+        height: 15px;
+    }
+    .spacingDiv1{
+        height: 15px;
     }
 }
 
@@ -72,8 +90,9 @@ a.phoneNumber{
 }
 
 .center-cropped {
-    object-fit: ; /* Do not scale the image */
-    object-position: center; /* Center the image within the element */
-  }
+    height: 100%;
+}
+
+
 
 
