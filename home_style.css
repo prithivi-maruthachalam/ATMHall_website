@@ -1,9 +1,24 @@
-#topHeader{
-    background-color: #432356;
+#primaryAccentBackground{
+    background-color: #6e124f!important;
 }
 
-#title{
-    color: goldenrod;
+.display-1{
+    font-size: 45px;
+    font-weight: bold;
+}
+.display-2{
+    font-size: 30px;
+}
+.display-3{
+    font-size: 20px;
+}
+
+.font-gold{
+    color: rgb(255, 179, 38);
+}
+
+.font-grey{
+    color: whitesmoke;
 }
 
 #supportTitle{
@@ -14,18 +29,31 @@
     font-size: 20px!important;
 }
 
-a.navigationItem{
-    color:goldenrod!important;
+.nav > .nav-item > a.navigationItem:hover,
+.nav > .nav-item > a.navigationItem:focus {
+    color: rgb(209, 175, 24)!important;
+    background-color: #ffffff!important;
 }
 
-a:hover{
-    color: goldenrod!important;
+a.navigationItem{
+    color: white!important;
+}
+
+.topPhoneSize{
+    font-size: 20px;
 }
 
 a.phoneNumber{
-    font-size: 27px;;
+    color: white;
 }
 
+@media(min-width: 576px) {
+    .topPhoneSize{
+        font-size: 23px;
+    }
+  }
+
+
 .topBarSpacing{
-    height: 10px;
+    height: 35px;
 }
