@@ -2,10 +2,15 @@
     background-color: #6e124f!important;
 }
 
-.display-1{
+.display-1-bold{
     font-size: 45px;
     font-weight: bold;
 }
+
+.display-1{
+    font-size: 45px;
+}
+
 .display-2{
     font-size: 30px;
 }
@@ -17,12 +22,20 @@
     color: rgb(255, 179, 38);
 }
 
+.font-lightGrey{
+    color: whitesmoke;
+}
+
 .font-bold{
     font-weight: bold;
 }
 
+.font-purple{
+    color: #6e124f;
+}
+
 .font-grey{
-    color: whitesmoke;
+    color: #383838;
 }
 
 #supportTitle{
@@ -76,12 +89,19 @@ a.phoneNumber{
     }
 }
 
+.top-logo-align{
+    text-align: center;
+}
+
 @media(min-width: 1200px){
     .topBarSpacing{
         height: 15px;
     }
     .spacingDiv1{
         height: 15px;
+    }
+    .top-logo-align{
+        text-align: left;
     }
 }
 
@@ -93,6 +113,48 @@ a.phoneNumber{
     height: 100%;
 }
 
+.branding-text{
+    font-size: 35px!important;
+    color: #6e124f!important;
+}
 
+.font-home-content1{
+    color: #494847;
+}
 
+.font-home-content1 > mark{
+    color: #383838;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.font-home-content2{
+    color: #383838;
+    font-size: 20px;
+}
+
+.mainContentSpacer{
+    height: 15px;
+}
+
+.content-text{
+}
+
+.content-text2{
+    text-align: right!important;
+}
+
+@media(max-width: 992px) {
+    .mainContentSpacer{
+        height: 5px;
+    }
+
+    .content-text{
+        text-align: center;
+    }
+
+    .content-text2{
+        text-align: center!important;
+    }
+}
 
