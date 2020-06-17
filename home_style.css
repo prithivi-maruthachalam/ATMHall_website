@@ -42,10 +42,6 @@
     color: white;
 }
 
-.nav{
-    font-size: 21px!important;
-    transition: font-size 0.2s;
-}
 .nav-tabs.nav-justified>li>a{
     border-bottom: none!important;
     border-radius: none!important;
@@ -60,9 +56,20 @@
     transition: color 0.2s, font-size 0.2s;
 }
 
+.nav > .nav-item:hover,
+.nav > .nav-item:focus{
+    color: rgb(209, 175, 24)!important;
+    background-color: #6e124f!important;
+    border: none!important;
+    font-size: 25px!important;
+
+    transition: color 0.2s, font-size 0.2s;
+}
+
 a.navigationItem{
     color: white!important;
-    transition: color 0.2s;
+    font-size: 21px !important;
+    transition: color 0.2s, font-size 0.2s;
 }
 
 a.phoneNumber{
@@ -156,5 +163,20 @@ a.phoneNumber{
     .content-text2{
         text-align: center!important;
     }
+}
+
+.main-content-container{
+    padding-top: 10px;
+}
+
+.secondary-content-container{
+    padding-top: 0px;
+}
+
+.hz-divider{
+    border: 0.5px solid #9e9e9e;
+    margin-right: 20px;
+    width: 50%;
+    display: inline-block;
 }
 
