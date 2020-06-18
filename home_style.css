@@ -15,7 +15,15 @@
     font-size: 30px;
 }
 .display-3{
+    font-size: 25px;
+}
+
+.display-4{
     font-size: 20px;
+}
+
+.display-5{
+    font-size: 17;
 }
 
 .font-gold{
@@ -145,9 +153,6 @@ a.phoneNumber{
     height: 15px;
 }
 
-.content-text{
-}
-
 .content-text2{
     text-align: right!important;
 }
@@ -206,3 +211,83 @@ a.phoneNumber{
 .font-home-image-subtext{
     color: #535353;
 }
+
+.nav-tabs.nav-justified>li>a{
+    border-bottom: none!important;
+    border-radius: none!important;
+}
+
+.footer-nav > .nav-item > a.navigationItem-footer:hover,
+.footer-nav > .nav-item > a.navigationItem-footer:focus {
+    color: rgb(209, 175, 24)!important;
+    background-color: #6e124f!important;
+    border: 0px solid #6e124f!important;
+    font-size: 20px!important;
+
+    transition: color 0.2s, font-size 0.2s;
+}
+
+.footer-nav > .nav-item:hover,
+.footer-nav > .nav-item:focus {
+    color: rgb(209, 175, 24)!important;
+    background-color: #6e124f!important;
+    font-size: 20px!important;
+
+    transition: color 0.2s, font-size 0.2s;
+}
+
+.nav-tabs{
+    border: 0px solid #6e124f!important;
+}
+
+a.navigationItem-footer{
+    color: rgb(235, 235, 235)!important;
+    font-size: 18px !important;
+    transition: color 0.2s, font-size 0.2s;
+}
+
+.title-nav-alignment-padding{
+    padding-left: 15px;
+}
+
+.primary-footer-padding{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.bottom-nav-container{
+    text-align: center;
+}
+
+.footer-phone-container{
+    text-align: center;
+}
+
+.footer-nav{
+    float: none!important;
+    margin: 0 auto!important;
+    display: table;
+    table-layout: fixed;
+}
+
+@media(min-width: 1200px){
+    .bottom-nav-container{
+        text-align: left;
+    }
+    .footer-phone-container{
+        text-align: right;
+    }
+
+    .footer-nav{
+        float: left;
+        display: block;
+    }
+}
+
+.forDeveloper{
+    background-color: #8a336d;
+    padding: 3px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
