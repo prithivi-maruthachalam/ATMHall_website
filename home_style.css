@@ -133,10 +133,11 @@ a.phoneNumber{
     color: #383838;
     font-weight: bold;
     font-size: 15px;
+    background: transparent;
 }
 
 .font-home-content2{
-    color: #383838;
+    color: #575656;
     font-size: 20px;
 }
 
@@ -166,17 +167,42 @@ a.phoneNumber{
 }
 
 .main-content-container{
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 .secondary-content-container{
-    padding-top: 0px;
+    padding-bottom: 10px;
 }
 
-.hz-divider{
+.secondary-content-padding{
+    padding-top: 0.5%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.main-images-container{
+    padding-top: 40px;
+}
+
+.hz-divider-major{
     border: 0.5px solid #9e9e9e;
-    margin-right: 20px;
     width: 50%;
     display: inline-block;
 }
 
+.hz-divider-minor{
+    border: 0.3px solid #c7b6c1;
+    width: 20%;
+}
+
+.card{
+    padding: 5px;
+    background-color: #fcf7fa;
+}
+.text-block{
+    padding-top: 10px;
+}
+
+.font-home-image-subtext{
+    color: #535353;
+}
