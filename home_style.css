@@ -1,3 +1,7 @@
+body{
+    background-color: #e7e5e5;
+}
+
 #primaryAccentBackground{
     background-color: #6e124f!important;
 }
@@ -360,6 +364,11 @@ a.navigationItem-footer{
     transition: text-align 0.6s;
 }
 
+.responsive-footer-alignment{
+    text-align: center;
+    transition: text-align 0.6s;
+}
+
 .footer-nav{
     float: none!important;
     margin: 0 auto!important;
@@ -375,6 +384,11 @@ a.navigationItem-footer{
     }
     .footer-phone-container{
         text-align: right;
+        transition: text-align 0.6s;
+    }
+
+    .responsive-footer-alignment{
+        text-align: left;
         transition: text-align 0.6s;
     }
 
@@ -417,4 +431,20 @@ a.developer-link:hover .developer-link-name{
     font-size: 22px;
     font-weight: 500;
     transition: color 0.4s, font-size 0.4s, font-weight 0.4s;
+}
+
+.alert-container-thing {
+    position: absolute;
+    top: 0px;
+    left: 30%;
+    right: 30%;
+    z-index: 10;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.3);
 }
