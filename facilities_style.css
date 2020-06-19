@@ -1,0 +1,12 @@
+.feature-box{
+    background-color: #a54d88;
+    padding: 20px;
+    border-radius: 1px 10px 10px 10px;
+
+    transition: padding 0.4s;
+}
+
+.feature-box:hover{
+    padding: 30px;
+    transition: padding 0.4s;
+}
