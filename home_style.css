@@ -30,26 +30,26 @@
 
 .display-1-5-responsive{
     font-size: 35px;
-    transition: font-size 0.4s;
+    transition: font-size 0.6s;
 }
 
 .secondary-content-padding{
     padding-top: 0.5%;
     padding-left: 20%;
     padding-right: 20%;
-    transition: padding 0.4s;
+    transition: padding 0.6s;
 }
 
 @media(max-width:576px){
     .display-1-5-responsive{
         font-size: 30px;
-        transition: font-size 0.4s;
+        transition: font-size 0.6s;
     }
 
     .secondary-content-padding{
         padding-left: 3%;
         padding-right: 3%;
-        transition: padding 0.4s;
+        transition: padding 0.6s;
     }
 }
 
@@ -124,40 +124,44 @@ a.phoneNumber{
 /*for smaller sizes*/
 .topBarSpacing{
     height: 0px;
+    transition: height 0.6s;
 }
 
 .topPhoneSize{
     font-size: 20px;
-    transition: font-size 0.4s;
+    transition: font-size 0.6s;
 }
 
 .spacingDiv1{
     height: 0px;
+    transition: height 0.6s;
 }
 
 /*is used generally*/
 @media(min-width: 576px) {
     .topPhoneSize{
         font-size: 35px;
-        transition: font-size 0.4s;
-
+        transition: font-size 0.6s;
     }
 }
 
 .top-logo-align{
     text-align: center;
+    transition: text-align 0.6s;
 }
 
 @media(min-width: 1200px){
     .topBarSpacing{
         height: 15px;
-        transition: height 0.4s;
+        transition: height 0.6s;
     }
     .spacingDiv1{
         height: 15px;
+        transition: height 0.6s;
     }
     .top-logo-align{
         text-align: left;
+        transition: text-align 0.6s;
     }
 }
 
@@ -176,12 +180,13 @@ a.phoneNumber{
 
 .font-home-content1{
     color: #494847;
+    font-size: 17px;
 }
 
 .font-home-content1 > mark{
     color: #383838;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 17px;
     background: transparent;
 }
 
@@ -190,25 +195,36 @@ a.phoneNumber{
     font-size: 20px;
 }
 
-.mainContentSpacer{
-    height: 15px;
+.main-content-padding{
+    padding-top: 30px;
+    transition: padding 0.6s;
 }
 
 .content-text2{
     text-align: right!important;
+    transition: text-align 0.6s;
 }
 
+.content-text{
+    text-align: left;
+    transition: text-align 0.6s;
+}
+
+
 @media(max-width: 992px) {
-    .mainContentSpacer{
-        height: 5px;
+    .main-content-padding{
+        padding-top: 10px;
+        transition: padding 0.6s;
     }
 
     .content-text{
         text-align: center;
+        transition: text-align 0.6s;
     }
 
     .content-text2{
         text-align: center!important;
+        transition: text-align 0.6s;
     }
 }
 
@@ -236,16 +252,17 @@ a.phoneNumber{
 }
 
 .card{
-    padding-top: 5px;
+    padding-top: 0px;
     padding-bottom: 5px;
-    background-color: #fcf7fa;
+    background-color: #8a336d;
 }
+
 .text-block{
     padding-top: 10px;
 }
 
 .font-home-image-subtext{
-    color: #535353;
+    color: #e9e8e8;
 }
 
 .nav-tabs.nav-justified>li>a{
@@ -283,6 +300,18 @@ a.navigationItem-footer{
     transition: color 0.2s, font-size 0.2s;
 }
 
+.footer-margin{
+    margin-top: 20px;
+    transition: margin 0.6s;
+}
+
+@media(max-width:768px){
+    .footer-margin{
+        margin-top: 0px;
+        transition: margin 0.6s;
+    }
+}
+
 @media(max-width:576px){
     a.navigationItem-footer, a.nav-footer-active{
         font-size: 14px !important;
@@ -316,17 +345,19 @@ a.navigationItem-footer{
 
 .primary-footer-padding{
     padding-top: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     padding-right: -10px;
     padding-left: -10px;
 }
 
 .bottom-nav-container{
     text-align: center;
+    transition: text-align 0.6s;
 }
 
 .footer-phone-container{
     text-align: center;
+    transition: text-align 0.6s;
 }
 
 .footer-nav{
@@ -334,19 +365,23 @@ a.navigationItem-footer{
     margin: 0 auto!important;
     display: table;
     table-layout: fixed;
+    transition: float 0.6s, display 0.6s;
 }
 
 @media(min-width: 1200px){
     .bottom-nav-container{
         text-align: left;
+        transition: text-align 0.6s;
     }
     .footer-phone-container{
         text-align: right;
+        transition: text-align 0.6s;
     }
 
     .footer-nav{
         float: left;
         display: block;
+        transition: float 0.6s, display 0.6s;
     }
 }
 
@@ -364,8 +399,22 @@ a.developer-link{
     transition: font-size 0.4s, color;
 }
 
-a.developer-link:hover,span.developer-link-name:hover{
-    font-size: 22px;
+.developer-link-name{
+    color: white;
+    font-size: 18px;
+    transition: color 0.4s, font-size 0.4s;
+}
+
+a.developer-link:hover .developer-link-name{
     color: goldenrod;
-    transition: font-size 0.4s, color 0.4s;
+    font-size: 22px;
+    font-weight: 500;
+    transition: color 0.4s, font-size 0.4s, font-weight 0.4s;
+}
+
+.forDeveloper:hover .developer-link-name{
+    color: goldenrod;
+    font-size: 22px;
+    font-weight: 500;
+    transition: color 0.4s, font-size 0.4s, font-weight 0.4s;
 }
