@@ -3,6 +3,7 @@
     $images = scandir($imagesDir);
     $totalImages = 0;
     
+    //this is going to hold all our images
     $imageObjects = array();
     
     foreach($images as $image){
@@ -21,6 +22,18 @@
     }
 
     //$imageObjects is the colelction of images
+    //the next 3 lines split the images into three chunks to arrange them into three coloumns for the flexbox
+    $chunkMaxSize = sizeof($imageObjects)/3;
+    $chunkMaxSize = ceil ($chunkMaxSize);
+    $imageObjectsList = array_chunk($imageObjects,$chunkMaxSize);
+    
+    //$imageObjectsList contains 3 lists, which are by themselves, lists of our image objects
+
+    //each image object contains
+    // 0 => number of the image to indicate order
+    // 1 => description/tag for the image to be displayed on the card, under the image
+    // 2 => alt text for the image - for SEO
+    // 3 => the relative URL of the image 
 ?>
 <!DOCTYPE html>
 <html>
@@ -76,18 +89,44 @@
     
     <!--The actual image content-->
     <div class="container main-images-container">
-        <?php
-            foreach($imageObjects as $imageObject){
-                echo '<div class="col-lg-4 col-sm-6 col-xs-12">';
+        <div class="gallery-flex-coloumn">
+            <?php
+                foreach($imageObjectsList[0] as $imageObject){
                     echo '<div class="gallery-image-card">';
                         echo '<img src="'.$imageObject[3].'" class="img-responsive" alt="'.$imageObject[2].'">';
                         echo '<div class="gallery-img-tag-container text-center">';
                             echo '<span class="display-4">'.$imageObject[1].'</span>';
                         echo '</div>';
                     echo '</div>';
-                echo '</div>';
-            }
-        ?>
+                }
+            ?>
+        </div>
+        
+        <div class="gallery-flex-coloumn">
+            <?php
+                foreach($imageObjectsList[1] as $imageObject){
+                    echo '<div class="gallery-image-card">';
+                        echo '<img src="'.$imageObject[3].'" class="img-responsive" alt="'.$imageObject[2].'">';
+                        echo '<div class="gallery-img-tag-container text-center">';
+                            echo '<span class="display-4">'.$imageObject[1].'</span>';
+                        echo '</div>';
+                    echo '</div>';
+                }
+            ?>
+        </div>
+
+        <div class="gallery-flex-coloumn">
+            <?php
+                foreach($imageObjectsList[2] as $imageObject){
+                    echo '<div class="gallery-image-card">';
+                        echo '<img src="'.$imageObject[3].'" class="img-responsive" alt="'.$imageObject[2].'">';
+                        echo '<div class="gallery-img-tag-container text-center">';
+                            echo '<span class="display-4">'.$imageObject[1].'</span>';
+                        echo '</div>';
+                    echo '</div>';
+                }
+            ?>
+        </div>
     </div>
 
     <!-- The footer-->
