@@ -1,3 +1,27 @@
+<?php
+    $imagesDir = "galleryImages/";
+    $images = scandir($imagesDir);
+    $totalImages = 0;
+    
+    $imageObjects = array();
+    
+    foreach($images as $image){
+        if($image == ".." || $image == "."){
+            continue;
+        } else {
+            $imageObject = array();
+            $imageURL = "".$imagesDir.$image;
+            $imageObject = explode("_",$imageURL);
+            $imageObject[0] = (int)explode("/",$imageObject[0])[1];
+            $imageObject[2] = explode(".",$imageObject[2])[0];
+            $imageObject[3] = $imageURL;
+    
+            array_push($imageObjects,$imageObject);
+        }
+    }
+
+    //$imageObjects is the colelction of images
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -47,7 +71,7 @@
 
     <!--title for facilities-->
     <div class="container text-center page-title-text">
-        <h1 class="display-1-5 font-purple">Facilities</h1>
+        <h1 class="display-1-5 font-purple">Gallery</h1>
     </div>
 
     <!-- The footer-->
