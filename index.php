@@ -36,10 +36,10 @@
                 </div>
 
                 <ul class="nav nav-tabs nav-justified" id="navigation">
-                    <li class="nav-item active"><a class="navigationItem" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="navigationItem" href="facilities.html">Facilities</a></li>
-                    <li class="nav-item"><a class="navigationItem" href="#">Gallery</a></li>
-                    <li class="nav-item"><a class="navigationItem" href="#">Contact</a></li>
+                    <li class="nav-item active"><a class="navigationItem" href="index.php">Home</a></li>
+                    <li class="nav-item"><a class="navigationItem" href="facilities.php">Facilities</a></li>
+                    <li class="nav-item"><a class="navigationItem" href="gallery.php">Gallery</a></li>
+                    <li class="nav-item"><a class="navigationItem" href="contact.php">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -156,7 +156,7 @@
 
     <!--The button to link to gallery-->
     <div class="container-fluid text-center btn-container">
-        <a href="gallery.html"><button class="btn btn-primary">View More Images</button></a>
+        <a href="gallery.php"><button class="btn btn-primary">View More Images</button></a>
     </div>
 
     <!--The footer-->
@@ -165,10 +165,10 @@
             <span class="font-lightGrey display-3 title-nav-alignment-padding">Quick Links</span>
 
             <ul class="nav nav-tabs footer-nav" id="navigation">
-                <li class="nav-item"><a class="navigationItem-footer nav-footer-active" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="navigationItem-footer" href="facilities.html">Facilities</a></li>
-                <li class="nav-item"><a class="navigationItem-footer" href="#">Gallery</a></li>
-                <li class="nav-item"><a class="navigationItem-footer" href="#">Contact</a></li>
+                <li class="nav-item"><a class="navigationItem-footer nav-footer-active" href="index.php">Home</a></li>
+                <li class="nav-item"><a class="navigationItem-footer" href="facilities.php">Facilities</a></li>
+                <li class="nav-item"><a class="navigationItem-footer" href="gallery.php">Gallery</a></li>
+                <li class="nav-item"><a class="navigationItem-footer" href="contact.php">Contact</a></li>
             </ul>
         </div>
         <div class="col-lg-3 responsive-footer-alignment primary-footer-padding">
