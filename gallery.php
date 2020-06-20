@@ -28,7 +28,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-        <link rel="stylesheet" href="facilities_style.css">
+        <link rel="stylesheet" href="gallery_style.css">
         <link rel="stylesheet" href="static_styling.css">
         
 
@@ -72,6 +72,22 @@
     <!--title for facilities-->
     <div class="container text-center page-title-text">
         <h1 class="display-1-5 font-purple">Gallery</h1>
+    </div>
+    
+    <!--The actual image content-->
+    <div class="container main-images-container">
+        <?php
+            foreach($imageObjects as $imageObject){
+                echo '<div class="col-lg-4 col-sm-6 col-xs-12">';
+                    echo '<div class="gallery-image-card">';
+                        echo '<img src="'.$imageObject[3].'" class="img-responsive" alt="'.$imageObject[2].'">';
+                        echo '<div class="gallery-img-tag-container text-center">';
+                            echo '<span class="display-4">'.$imageObject[1].'</span>';
+                        echo '</div>';
+                    echo '</div>';
+                echo '</div>';
+            }
+        ?>
     </div>
 
     <!-- The footer-->

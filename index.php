@@ -125,7 +125,7 @@
             <div class="col-md-4 main-images-container">
                 <div class="card">
                     <img src="images/Backdrops/ATM Hall backdrop Jan 19/DSC_4953.JPG" alt="some alt text" class="img-responsive">
-                    <div class="text-block">
+                    <div class="img-text-block">
                         <span class="display-4 font-grey">Function Hall</span>
                         <p class="font-grey">Functions can be processed here</p>
                     </div>
@@ -135,7 +135,7 @@
             <div class="col-md-4 main-images-container">
                 <div class="card">
                     <img src="images/Exteriors/DSC_2087.JPG" alt="some alt text" class="img-responsive">
-                    <div class="text-block">
+                    <div class="img-text-block">
                         <span class="display-4 font-grey">The View</span>
                         <p class="font-grey">The view from Singanallur, Coimbatore</p>
                     </div>
@@ -145,7 +145,7 @@
             <div class="col-md-4 main-images-container">
                 <div class="card">
                     <img src="images/Dining/DSC_5183.jpg" alt="some alt text" class="img-responsive">
-                    <div class="text-block">
+                    <div class="img-text-block">
                         <span class="display-4 font-grey">Dining</span>
                         <p class="font-grey">Eating can be executed well here</p>
                     </div>

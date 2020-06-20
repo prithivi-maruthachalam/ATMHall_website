@@ -1,3 +1,13 @@
 body{
     background-color: #e7e5e5;
 }
+
+.gallery-image-card{
+    background-color: #ececec;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.1);
+}
+
+.gallery-img-tag-container{
+    padding: 12px;
+}
