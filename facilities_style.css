@@ -10,3 +10,25 @@
     padding: 30px;
     transition: padding 0.4s;
 }
+
+.responsive-display{
+    display: inline-block;
+}
+
+@media(min-width: 992px) and (max-width: 1200px){
+    .feature-box:hover{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        transition: padding 0.4s, color 0.4s;
+    }
+    
+    .responsive-display{
+        display: block;
+    }
+}
+
+.feature-container{
+    padding-bottom: 10px;
+}
