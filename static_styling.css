@@ -52,6 +52,10 @@
     color: whitesmoke;
 }
 
+.font-grey-lighter{
+    color: rgb(168, 168, 168);
+}
+
 .font-bold{
     font-weight: bold;
 }
@@ -260,10 +264,9 @@ a.navigationItem-footer{
     .footer-nav > .nav-item > a.nav-footer-active{
         color: rgb(209, 175, 24)!important;
         background-color: #6e124f!important;
-        border: 0px solid #6e124f!important;
         font-size: 16px!important;
-
-        transition: color 0.2s, font-size 0.2s;
+        border-bottom: none!important;
+        transition: color 0.2s, font-size 0.2s, border 0.4s;
     }
 
     .footer-nav > .nav-item:hover,
@@ -339,4 +342,17 @@ a.navigationItem-footer{
 
 .spacingDiv2{
     height: 40px;
+}
+
+.btn-container{
+    padding: 20px;
+}
+
+.btn-primary{
+    padding: 10px!important;
+    font-size: 17px;
+    border: none;
+}
+.font-bold{
+    font-weight: 600;
 }

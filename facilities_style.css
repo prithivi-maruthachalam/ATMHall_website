@@ -1,3 +1,7 @@
+body{
+    background-color: #f5f3f3;
+}
+
 .feature-box{
     background-color: #a54d88;
     padding: 20px;
@@ -15,6 +19,14 @@
     display: inline-block;
 }
 
+.feature-container{
+    padding-bottom: 10px;
+}
+
+.features-outer-container{
+    padding-bottom: 40px;
+}
+
 @media(min-width: 992px) and (max-width: 1200px){
     .feature-box:hover{
         padding-left: 20px;
@@ -29,6 +41,31 @@
     }
 }
 
-.feature-container{
+.list-container{
     padding-bottom: 10px;
+}
+
+.list-container > p > mark{
+    background-color:transparent;
+    font-size: 23px;
+    color: goldenrod;
+}
+
+.list-title-container{
+    border-bottom: 2px solid #a54d88;
+    color: #a54d88;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10px;
+}
+
+.list-area-container{
+    padding-bottom: 30px;
+}
+
+@media(max-width: 768px){
+    .list-title-container{
+        margin-right: 0;
+        margin-left: 0;
+    }
 }
