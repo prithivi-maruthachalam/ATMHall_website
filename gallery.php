@@ -25,6 +25,9 @@
     //the next 3 lines split the images into three chunks to arrange them into three coloumns for the flexbox
     $chunkMaxSize = sizeof($imageObjects)/3;
     $chunkMaxSize = ceil ($chunkMaxSize);
+    usort($imageObjects, function($a, $b) {
+        return $a[0] <=> $b[0];
+    });
     $imageObjectsList = array_chunk($imageObjects,$chunkMaxSize);
     
     //$imageObjectsList contains 3 lists, which are by themselves, lists of our image objects
