@@ -421,6 +421,34 @@ a.navigationItem-footer{
 
 }
 
+.menu-container{
+    display: none;
+    font-size: 30px;
+    color: goldenrod;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    transition: display 0.4s;
+}
+
+.glyphicon{
+    cursor: pointer;
+}
+
+.nav-hide{
+    height: 100%;
+}
+
+@media(max-width: 768px){
+    .menu-container{
+        display: block;
+        transition: display 0.4s;
+    }
+
+    .nav-hide{
+        display: none;
+    }
+}
+
 @media(max-width:576px){
     .btn-phone{
         margin-top: 7px;

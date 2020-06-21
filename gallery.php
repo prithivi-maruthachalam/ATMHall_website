@@ -76,7 +76,11 @@
                         </h2>
                     </div>
 
-                    <ul class="nav nav-tabs nav-justified" id="navigation">
+                    <div class="menu-container" onclick="collapseNav()">
+                        <span class="glyphicon glyphicon-menu-hamburger">
+                    </div>
+                    
+                    <ul class="nav nav-tabs nav-justified nav-hide" id="navigationA">
                         <li class="nav-item"><a class="navigationItem" href="index.php">Home</a></li>
                         <li class="nav-item"><a class="navigationItem" href="facilities.php">Facilities</a></li>
                         <li class="nav-item active"><a class="navigationItem" href="gallery.php">Gallery</a></li>
@@ -202,6 +206,16 @@
                 } else {
                     downButton.style.display = "none";
                 }
+            }
+
+            var navList = document.getElementById("navigationA");
+                function collapseNav(){
+                    var currentState = navList.style.display;
+                    if(currentState == "block"){
+                        navList.style.display = "none";
+                    } else {
+                        navList.style.display = "block";
+                    }
                 }
         </script>
 
