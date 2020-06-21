@@ -31,7 +31,7 @@
                 <div class="col-lg-6 text-center" role="navigation">
                     <div class="topBarSpacing"></div>
                     <div class="container-fluid">
-                        <h2 class="font-gold topPhoneSize"> <span class="responsive-hide">For Booking : </span>
+                        <h2 class="font-gold topPhoneSize"> <span class="responsive-hide">For Booking </span>
                             <a class="contact-phone" href="tel:+918940401780"><button class="btn-phone"><span class="glyphicon glyphicon-earphone"></span>&nbsp;+91 8940401780</button></a>
                         </h2>
                     </div>
@@ -60,12 +60,12 @@
             <div class="col-lg-6">
                 <div class="contact-info-container">
                     <div class="call-actions-container">
-                        <h1 class="font-purple">Call Us</h1>
+                        <span class="font-purple display-1-5-responsive">Call Us</span>
                         <p><a class="contact-phone" href="tel:+918940401780"><button class="btn-phone"><span class="glyphicon glyphicon-earphone"></span>&nbsp;+91 8940401780</button></a></p>
                     </div>
 
                     <div class="address-container">
-                        <h1 class="font-purple">Find Us</h1>
+                        <span class="font-purple display-1-5-responsive">Find Us</span>
                         <p class="display-3 font-grey">303, Trichy Road, Singanallur</p>
                         <p class="display-3 font-grey">Coimbatore</p>
                         <p class="display-3 font-grey">Tamil Nadu 641005</p>

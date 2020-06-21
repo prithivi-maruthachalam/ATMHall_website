@@ -12,6 +12,16 @@
     padding-bottom: 20px;
 }
 
+.address-container{
+    margin-top: 10px;
+}
+
+@media(max-width:576px){
+    .address-container{
+        margin-top: 20px;
+    }
+}
+
 @media(max-width: 1200px){
     .contact-info-container{
         padding-top: 30px;

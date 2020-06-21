@@ -397,6 +397,7 @@ a.navigationItem-footer{
     padding: 10px;
     font-size: 22px;
     font-weight: 500px;
+    margin-top: 10px;
     border-radius: 4px;
     box-shadow: 3px 3px 4px rgba(0,0,0,0.5);
     text-shadow: none;
@@ -413,7 +414,7 @@ a.navigationItem-footer{
 
 @media(max-width:576px){
     .btn-phone{
-        margin-top: 5px;
+        margin-top: 7px;
         transition: margin 0.4s;
     }
 }

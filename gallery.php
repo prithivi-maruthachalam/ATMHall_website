@@ -71,7 +71,7 @@
                 <div class="col-lg-6 text-center" role="navigation">
                     <div class="topBarSpacing"></div>
                     <div class="container-fluid">
-                        <h2 class="font-gold topPhoneSize"> <span class="responsive-hide">For Booking : </span>
+                        <h2 class="font-gold topPhoneSize"> <span class="responsive-hide">For Booking </span>
                             <a class="contact-phone" href="tel:+918940401780"><button class="btn-phone"><span class="glyphicon glyphicon-earphone"></span>&nbsp;+91 8940401780</button></a>
                         </h2>
                     </div>
