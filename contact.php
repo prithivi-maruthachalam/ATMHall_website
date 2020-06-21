@@ -33,6 +33,7 @@
                     <div class="container-fluid">
                         <h2 class="font-gold  topPhoneSize"> For Bookings : 
                             <a class="phoneNumber  topPhoneSize" href="tel:+918940401780">+91 8940401780</a>
+                            <a href="tel:+918940401780"><span class="glyphicon glyphicon-earphone call-icon"></span></a>
                         </h2>
                     </div>
 
@@ -61,7 +62,7 @@
                 <div class="contact-info-container">
                     <div class="call-actions-container">
                         <h1 class="font-purple">Call Us</h1>
-                        <p><a class="display-2" href="tel:+918940401780">+91 8940401780</a></p>
+                        <p><a class="contact-phone" href="tel:+918940401780"><button class="btn-phone"><span class="glyphicon glyphicon-earphone"></span>&nbsp;+91 8940401780</button></a></p>
                     </div>
 
                     <div class="address-container">
@@ -94,8 +95,8 @@
             </div>
             <div class="col-lg-4 footer-phone-container  primary-footer-padding">
                 <span class="font-gold  display-3"> For Bookings</span> 
-                <p><a class="phoneNumber  display-2" href="tel:+918940401780">+91 8940401780</a></p>
-                </div>
+                <p><a class="phoneNumber display-2" href="tel:+918940401780">+91 8940401780</a></p>
+            </div>
         </footer>
 
         <!--footer for the developer-->

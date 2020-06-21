@@ -181,6 +181,7 @@
             <div class="col-lg-4 footer-phone-container  primary-footer-padding">
                 <span class="font-gold  display-3"> For Bookings</span> 
                 <p><a class="phoneNumber  display-2" href="tel:+918940401780">+91 8940401780</a></p>
+                <a href="tel:+918940401780"><span class="glyphicon glyphicon-earphone call-icon"></span></a>
                 </div>
         </footer>
 
