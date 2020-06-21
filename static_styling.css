@@ -9,6 +9,7 @@
 .display-1-bold-responsive{
     font-size: 45px;
     font-weight: bold;
+    transition: font-size 0.6s;
 }
 .display-1{
     font-size: 45px;
@@ -24,9 +25,11 @@
 }
 .display-3-responsive{
     font-size: 25px;
+    transition: font-size 0.6s;
 }
 .display-3-5-responsive{
     font-size: 25px;
+    transition: font-size 0.6s;
 }
 .display-4{
     font-size: 20px;
@@ -58,11 +61,12 @@
 
 .title-nav-alignment-padding{
     padding-left: 15px;
-    display: block;
+    transition: padding 0.6s;
 }
 
 .responsive-hide{
     display: block;
+    transition: display 0.6s;
 }
 
 @media(max-width:576px){
@@ -74,14 +78,17 @@
     .display-1-bold-responsive{
         font-size: 35px;
         font-weight: bold;
+        transition: font-size 0.6s;
     }
 
     .display-3-responsive{
         font-size: 20px;
+        transition: font-size 0.6s;
     }
 
     .display-3-5-responsive{
         font-size: 22px;
+        transition: font-size 0.6s;
     }
 
     .primary-footer-padding{
@@ -89,10 +96,12 @@
         padding-bottom: 3px;
         padding-right: -10px;
         padding-left: -10px;
+        transition: padding 0.6s;
     }
 
     .responsive-hide{
         display: none;
+        transition: padding 0.6s;
     }
 
 }

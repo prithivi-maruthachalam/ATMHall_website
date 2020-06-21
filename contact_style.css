@@ -6,6 +6,7 @@
 .contact-info-container{
     padding-top: 30px;
     text-align: right;
+    transition: padding 0.4s;
 }
 
 .call-actions-container{
@@ -14,11 +15,13 @@
 
 .address-container{
     margin-top: 10px;
+    transition: margin 0.4s;
 }
 
 @media(max-width:576px){
     .address-container{
         margin-top: 20px;
+        transition: margin 0.4s;
     }
 }
 
@@ -26,6 +29,7 @@
     .contact-info-container{
         padding-top: 30px;
         text-align: center;
+        transition: padding 0.4s;
     }
 }
 
