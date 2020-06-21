@@ -169,12 +169,12 @@
         <!--Flaoting action button to go up and down-->
         <div class="fab-group-container">
             <a href="#top">
-                <div class="fab text-center">
+                <div class="fab text-center" id="up-button">
                     <span class="glyphicon glyphicon-chevron-up move-icon">
                 </div>
             </a>
             <a href="#bottom">
-                <div class="fab text-center">
+                <div class="fab text-center" id="down-button">
                     <span class="glyphicon glyphicon-chevron-down move-icon">
                 </div>
             </a>
@@ -182,7 +182,28 @@
         
         <!--Scripts that access body elements-->
         <script type="text/javascript">
-        
+            var upButton = document.getElementById("up-button");
+            var downButton = document.getElementById("down-button");
+            downButton.style.display = "block";
+
+            window.onscroll = function() {
+                scrollFunction();
+            }
+
+            function scrollFunction(){
+                if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+                    upButton.style.display = "block";
+                } else {
+                    upButton.style.display = "none";
+                }
+                
+                var bottomScroll = (document.documentElement.scrollHeight - document.documentElement.scrollTop);
+                if(bottomScroll > 1470) {
+                    downButton.style.display = "block";
+                } else {
+                    downButton.style.display = "none";
+                }
+            }
         </script>
 
     </body>

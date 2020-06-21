@@ -394,7 +394,9 @@ a.navigationItem-footer{
     margin-bottom: 10px;
     margin-top: 10px;
     color: white;
+    display: none;
     box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    transition: display 0.3s;
 }
 
 .fab:hover{
