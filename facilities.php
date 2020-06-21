@@ -31,8 +31,8 @@
                 <div class="col-lg-6 text-center" role="navigation">
                     <div class="topBarSpacing"></div>
                     <div class="container-fluid">
-                        <h2 class="font-gold  topPhoneSize"> For Bookings : 
-                            <a class="phoneNumber  topPhoneSize" href="tel:+918940401780">+91 8940401780</a>
+                        <h2 class="font-gold  topPhoneSize"> For Booking : 
+                            <a class="contact-phone" href="tel:+918940401780"><button class="btn-phone"><span class="glyphicon glyphicon-earphone"></span>&nbsp;+91 8940401780</button></a>    
                         </h2>
                     </div>
 
@@ -143,10 +143,9 @@
                 <p class="font-lightGrey display-5">Tamil Nadu 641005</p>
             </div>
             <div class="col-lg-4 footer-phone-container  primary-footer-padding">
-                <span class="font-gold  display-3"> For Bookings</span> 
-                <p><a class="phoneNumber  display-2" href="tel:+918940401780">+91 8940401780</a></p>
-                <a href="tel:+918940401780"><span class="glyphicon glyphicon-earphone call-icon"></span></a>
-                </div>
+                <span class="font-gold display-3 padding-bottom-1"> For Bookings</span> 
+                <p class="padding-top-1"><a class="contact-phone" href="tel:+918940401780"><button class="btn-phone"><span class="glyphicon glyphicon-earphone"></span>&nbsp;+91 8940401780</button></a></p>
+            </div>
         </footer>
 
         <!--footer for the developer-->
