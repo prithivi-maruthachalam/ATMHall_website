@@ -6,7 +6,10 @@
     font-size: 45px;
     font-weight: bold;
 }
-
+.display-1-bold-responsive{
+    font-size: 45px;
+    font-weight: bold;
+}
 .display-1{
     font-size: 45px;
 }
@@ -19,7 +22,12 @@
 .display-3{
     font-size: 25px;
 }
-
+.display-3-responsive{
+    font-size: 25px;
+}
+.display-3-5-responsive{
+    font-size: 25px;
+}
 .display-4{
     font-size: 20px;
 }
@@ -41,11 +49,52 @@
     padding-top: 5px;
 }
 
+.primary-footer-padding{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: -10px;
+    padding-left: -10px;
+}
+
+.title-nav-alignment-padding{
+    padding-left: 15px;
+    display: block;
+}
+
+.responsive-hide{
+    display: block;
+}
+
 @media(max-width:576px){
     .display-1-5-responsive{
         font-size: 30px;
         transition: font-size 0.6s;
     }
+
+    .display-1-bold-responsive{
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .display-3-responsive{
+        font-size: 20px;
+    }
+
+    .display-3-5-responsive{
+        font-size: 22px;
+    }
+
+    .primary-footer-padding{
+        padding-top: 5px;
+        padding-bottom: 3px;
+        padding-right: -10px;
+        padding-left: -10px;
+    }
+
+    .responsive-hide{
+        display: none;
+    }
+
 }
 
 .font-gold{
@@ -279,17 +328,6 @@ a.navigationItem-footer{
     }
 }
 
-.title-nav-alignment-padding{
-    padding-left: 15px;
-}
-
-.primary-footer-padding{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: -10px;
-    padding-left: -10px;
-}
-
 .bottom-nav-container{
     text-align: center;
     transition: text-align 0.6s;
@@ -373,9 +411,9 @@ a.navigationItem-footer{
 
 }
 
-@media(max-width:453px){
+@media(max-width:576px){
     .btn-phone{
-        margin-top: 10px;
+        margin-top: 5px;
         transition: margin 0.4s;
     }
 }

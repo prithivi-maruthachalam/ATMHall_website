@@ -56,14 +56,14 @@
     </head> 
 
     <body>
-        <!--this is the header-->
-        <header class="main-header" id="primaryAccentBackground">
-            <div class="container" id="top">
+         <!--this is the header-->
+         <header class="main-header" id="primaryAccentBackground">
+            <div class="container">
                 <div class="col-lg-6 top-logo-align">
                     <div class="container-fluid">
-                        <h1 class="display-1-bold font-gold">ATM Hall</h1>
-                        <p class="display-3 font-lightGrey">Ashtalakshmi Thirumana Mahal</p>
-                        <p class="display-3 font-lightGrey">அஷ்டலட்சுமி திருமண மஹால்</p>
+                        <h1 class="display-1-bold-responsive font-gold">ATM Hall</h1>
+                        <p class="display-3-responsive font-lightGrey">Ashtalakshmi Thirumana Mahal</p>
+                        <p class="display-3-responsive font-lightGrey">அஷ்டலட்சுமி திருமண மஹால்</p>
                     </div>
                     <div class="spacingDiv1"></div>                
                 </div>
@@ -71,7 +71,7 @@
                 <div class="col-lg-6 text-center" role="navigation">
                     <div class="topBarSpacing"></div>
                     <div class="container-fluid">
-                        <h2 class="font-gold  topPhoneSize"> For Booking : 
+                        <h2 class="font-gold topPhoneSize"> <span class="responsive-hide">For Booking : </span>
                             <a class="contact-phone" href="tel:+918940401780"><button class="btn-phone"><span class="glyphicon glyphicon-earphone"></span>&nbsp;+91 8940401780</button></a>
                         </h2>
                     </div>
@@ -133,11 +133,10 @@
             </div>
         </div>
 
-        <!-- The footer-->
+        <!--The footer-->
         <footer class="container-fluid footer-margin" id="primaryAccentBackground">
-            <div id="bottom" class="col-lg-5 bottom-nav-container  primary-footer-padding">
-                <span class="font-lightGrey display-3 title-nav-alignment-padding">Quick Links</span>
-
+            <div class="col-lg-5 bottom-nav-container primary-footer-padding">
+                <span class="font-lightGrey display-3-5-responsive title-nav-alignment-padding responsive-hide">Quick Links</span>
                 <ul class="nav nav-tabs footer-nav" id="navigation">
                     <li class="nav-item"><a class="navigationItem-footer" href="index.php">Home</a></li>
                     <li class="nav-item"><a class="navigationItem-footer" href="facilities.php">Facilities</a></li>
@@ -146,13 +145,13 @@
                 </ul>
             </div>
             <div class="col-lg-3 responsive-footer-alignment primary-footer-padding">
-                <span class="display-3 font-lightGrey">Address</span>
+                <span class="display-3-responsive font-lightGrey">Address</span>
                 <p class="font-lightGrey display-5">303, Trichy Road, Singanallur</p>
                 <p class="font-lightGrey display-5">Coimbatore</p>
                 <p class="font-lightGrey display-5">Tamil Nadu 641005</p>
             </div>
-            <div class="col-lg-4 footer-phone-container  primary-footer-padding">
-                <span class="font-gold display-3 padding-bottom-1"> For Booking</span> 
+            <div class="col-lg-4 footer-phone-container primary-footer-padding">
+                <span class="font-gold display-3-responsive responsive-hide">For Booking</span> 
                 <p class="padding-top-1"><a class="contact-phone" href="tel:+918940401780"><button class="btn-phone"><span class="glyphicon glyphicon-earphone"></span>&nbsp;+91 8940401780</button></a></p>
             </div>
         </footer>
@@ -203,7 +202,7 @@
                 } else {
                     downButton.style.display = "none";
                 }
-            }
+                }
         </script>
 
     </body>
