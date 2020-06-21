@@ -58,7 +58,7 @@
     <body>
         <!--this is the header-->
         <header class="main-header" id="primaryAccentBackground">
-            <div class="container">
+            <div class="container" id="top">
                 <div class="col-lg-6 top-logo-align">
                     <div class="container-fluid">
                         <h1 class="display-1-bold font-gold">ATM Hall</h1>
@@ -135,7 +135,7 @@
 
         <!-- The footer-->
         <footer class="container-fluid footer-margin" id="primaryAccentBackground">
-            <div class="col-lg-5 bottom-nav-container  primary-footer-padding">
+            <div id="bottom" class="col-lg-5 bottom-nav-container  primary-footer-padding">
                 <span class="font-lightGrey display-3 title-nav-alignment-padding">Quick Links</span>
 
                 <ul class="nav nav-tabs footer-nav" id="navigation">
@@ -166,8 +166,24 @@
             </div>
         </footer>
 
+        <!--Flaoting action button to go up and down-->
+        <div class="fab-group-container">
+            <a href="#top">
+                <div class="fab text-center">
+                    <span class="glyphicon glyphicon-chevron-up move-icon">
+                </div>
+            </a>
+            <a href="#bottom">
+                <div class="fab text-center">
+                    <span class="glyphicon glyphicon-chevron-down move-icon">
+                </div>
+            </a>
+        </div>
+        
         <!--Scripts that access body elements-->
-        <script src="homeScript.js" type="text/javascript"></script>
+        <script type="text/javascript">
+        
+        </script>
 
     </body>
 </html>

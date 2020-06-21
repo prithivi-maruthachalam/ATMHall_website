@@ -379,3 +379,30 @@ a.navigationItem-footer{
         transition: margin 0.4s;
     }
 }
+
+.fab-group-container{
+    bottom: 30px;
+    right: 30px;
+    position: fixed;
+}
+
+.fab{
+    background-color: rgb(207, 217, 245);
+    font-size: 27px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: white;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+}
+
+.fab:hover{
+    box-shadow: none;
+    background-color: rgb(185, 189, 202);
+}
+
+.move-icon{
+    display: inline-block;
+    vertical-align: middle;
+}
