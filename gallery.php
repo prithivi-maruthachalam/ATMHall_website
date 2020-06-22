@@ -209,14 +209,23 @@
             }
 
             var navList = document.getElementById("navigationA");
-                function collapseNav(){
-                    var currentState = navList.style.display;
-                    if(currentState == "block"){
-                        navList.style.display = "none";
-                    } else {
-                        navList.style.display = "block";
-                    }
+
+            window.onresize = function(){
+                if(window.innerWidth > 768){
+                    navList.style.height = "60px";
+                } else if(window.innerWidth <= 768){
+                    navList.style.height = "0px";
                 }
+            };
+
+            function collapseNav(){
+                var currentState = navList.style.height;
+                if(currentState == "0px" || currentState == ""){
+                    navList.style.height = "230px";
+                } else {
+                    navList.style.height = "0px";
+                }
+            }
         </script>
 
     </body>

@@ -163,13 +163,21 @@
 
         <script type="text/javascript">
             var navList = document.getElementById("navigationA");
-            console.log(navList);
+
+            window.onresize = function(){
+                if(window.innerWidth > 768){
+                    navList.style.height = "60px";
+                } else if(window.innerWidth <= 768){
+                    navList.style.height = "0px";
+                }
+            };
+
             function collapseNav(){
-                var currentState = navList.style.display;
-                if(currentState == "block"){
-                    navList.style.display = "none";
+                var currentState = navList.style.height;
+                if(currentState == "0px" || currentState == ""){
+                    navList.style.height = "230px";
                 } else {
-                    navList.style.display = "block";
+                    navList.style.height = "0px";
                 }
             }
         </script>
