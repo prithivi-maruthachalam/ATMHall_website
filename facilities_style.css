@@ -55,7 +55,7 @@ body{
 .list-container > p > mark{
     background-color:transparent;
     font-size: 23px;
-    color: goldenrod;
+    color: rgb(202, 166, 74);;
 }
 
 .list-title-container{

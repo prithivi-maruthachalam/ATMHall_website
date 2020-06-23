@@ -106,8 +106,13 @@
 
 }
 
+
 .font-gold{
-    color: rgb(255, 179, 38);
+    color: rgb(202, 166, 74);
+}
+
+.font-gold-darker{
+    color: rgb(180, 136, 23);
 }
 
 .font-lightGrey{
@@ -251,14 +256,14 @@ a.developer-link{
 }
 
 a.developer-link:hover .developer-link-name{
-    color: goldenrod;
+    color:rgb(202, 166, 74);;
     font-size: 22px;
     font-weight: 500;
     transition: color 0.4s, font-size 0.4s, font-weight 0.4s;
 }
 
 .forDeveloper:hover .developer-link-name{
-    color: goldenrod;
+    color: rgb(202, 166, 74);;
     font-size: 22px;
     font-weight: 500;
     transition: color 0.4s, font-size 0.4s, font-weight 0.4s;
@@ -401,7 +406,7 @@ a.navigationItem-footer{
 
 .btn-phone {
     color: #6e124f; 
-    background-color: goldenrod;
+    background-color: rgb(202, 166, 74);;
     border: none;
     padding: 10px;
     font-size: 22px;
@@ -423,7 +428,7 @@ a.navigationItem-footer{
 
 .menu-container{
     font-size: 30px;
-    color: goldenrod;
+    color: rgb(202, 166, 74);;
     margin-top: 10px;
     margin-bottom: 5px;
     opacity: 1;

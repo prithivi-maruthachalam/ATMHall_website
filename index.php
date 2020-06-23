@@ -116,7 +116,7 @@
             <div class="container">
                 <hr class="hz-divider-major">
                 <div class="display-2 font-purple">Discover the Best</div>
-                <div class="display-1-5-responsive font-gold">Wedding Hall In budget in Singanallur Coimbatore</div>
+                <div class="display-1-5-responsive font-gold-darker">Wedding Hall In budget in Singanallur Coimbatore</div>
                 <p class="font-home-content2 secondary-content-padding">
                     When looking for the perfect kalyana mandapam in Coimbatore, you should prefer a classic
                     place where culture blends with modernity. To celebrate the start of your marital
