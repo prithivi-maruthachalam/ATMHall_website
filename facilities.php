@@ -48,42 +48,42 @@
 
         <!--title for facilities-->
         <div class="container text-center page-title-text">
-            <h1 class="display-1-5 font-purple">Facilities</h1>
+            <h1 class="display-1-5-responsive font-purple">Facilities</h1>
         </div>
 
         <!--featured facilities-->
         <div class="container text-center features-outer-container">
-            <div class="col-lg-2 col-md-4 feature-container">
+            <div class="col-lg-2 col-md-4 col-xs-6 feature-container">
                 <div class="feature-box">
-                    <span class="display-4-5 font-lightGrey">150+ seats in Main Hall</span>
+                    <span class="display-feature-responsive font-lightGrey">150+ seats in Main Hall</span>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 feature-container">
+            <div class="col-lg-2 col-md-4 col-xs-6 feature-container">
                 <div class="feature-box">
-                    <span class="display-4-5 font-lightGrey">90+ Seats in Dining Hall</span>
+                    <span class="display-feature-responsive font-lightGrey">90+ Seats in Dining Hall</span>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 feature-container">
+            <div class="col-lg-2 col-md-4 col-xs-6 feature-container">
                 <div class="feature-box">
-                    <span class="display-4-5 font-lightGrey">Air Cooled</span>
+                    <span class="display-feature-responsive font-lightGrey">Air Cooled</span>
                 </div>
             </div>
         
             <div class="clearfix visible-md-block"></div>
             
-            <div class="col-lg-2 col-md-4 feature-container">
+            <div class="col-lg-2 col-md-4 col-xs-6 feature-container">
                 <div class="feature-box">
-                    <span class="display-4-5 font-lightGrey">Kitchen with complimentary vessels</span>
+                    <span class="display-feature-responsive font-lightGrey">Kitchen with complimentary vessels</span>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 feature-container">
+            <div class="col-lg-2 col-md-4 col-xs-6 feature-container">
                 <div class="feature-box">
-                    <span class="display-4-5 font-lightGrey">Generator Power Backup</span>
+                    <span class="display-feature-responsive font-lightGrey">Generator Power Backup</span>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 feature-container">
+            <div class="col-lg-2 col-md-4 col-xs-6 feature-container">
                 <div class="feature-box">
-                    <span class="display-4-5 font-lightGrey">Complimentary Tables &#38; Chains</span>
+                    <span class="display-feature-responsive font-lightGrey">Complimentary Tables &#38; Chains</span>
                 </div>
             </div>
         </div>
@@ -91,34 +91,34 @@
         <div class="container list-area-container">
             <div class="container-fluid list-container">
                     <div class="text-center container">
-                        <div class="list-title-container"><h1>Space &#38; Capacity</h1></div>
+                        <div class="list-title-container"><h1 class="display-1-5-responsive-2">Space &#38; Capacity</h1></div>
                         <div class="list-container" id="spacing-facilities">
-                            <p class="display-4"> Main hall has <mark>seating</mark> facility of <mark>150</mark></p>
-                            <p class="display-4"> <mark>Dining</mark> can accomodate <mark>90 people</mark> </p>
-                            <p class="display-4"> <mark>Welcome Area</mark> can take <mark> 50 </mark> persons.</p>
-                            <p class="display-4"> There are <mark>air-conditioned rooms</mark> <span class="font-grey-lighter"> &nbsp; These rooms can also be used as Bride &#038; Groom rooms</span> </p>
-                            <p class="display-4"> A <mark>kitchen</mark> is <mark>attached</mark> to the facility  <span class="font-grey-lighter">&nbsp; Catering from outside also allowed</span></p>
+                            <div class="display-4-responsive facilities-item"> Main hall has <mark>seating</mark> facility of <mark>150</mark></div>
+                            <div class="display-4-responsive facilities-item"> <mark>Dining</mark> can accomodate <mark>90 people</mark> </div>
+                            <div class="display-4-responsive facilities-item"> <mark>Welcome Area</mark> can take <mark> 50 </mark> persons.</div>
+                            <div class="display-4-responsive facilities-item"> There are <mark>air-conditioned rooms</mark> <span class="font-grey-lighter"> &nbsp; These rooms can also be used as Bride &#038; Groom rooms</span> </div>
+                            <div class="display-4-responsive facilities-item"> A <mark>kitchen</mark> is <mark>attached</mark> to the facility  <span class="font-grey-lighter">&nbsp; Catering from outside also allowed</span></div>
                         </div>
                     </div>
             </div>
             <div class="container-fluid list-container">
                 <div class="text-center container">
-                    <div class="list-title-container"><h1>Just for You</h1></div>
+                    <div class="list-title-container"><h1 class="display-1-5-responsive-2">Just for You</h1></div>
                     <div class="list-container">
-                        <p class="display-4">The main hall is <mark>air cooled</mark> with tent cooler</p>
-                        <p class="display-4">Power backup is available with a <mark>modern generator</mark></p>
-                        <p class="display-4">Furniture like <mark>chairs</mark>, <mark>dining</mark> &amp; <mark>tables</mark> are free for you</p>
-                        <p class="display-4">Also <mark>vessels</mark> for cooking and serving are also <mark> free for use</mark></p>
+                        <div class="display-4-responsive facilities-item">The main hall is <mark>air cooled</mark> with tent cooler</div>
+                        <div class="display-4-responsive facilities-item">Power backup is available with a <mark>modern generator</mark></div>
+                        <div class="display-4-responsive facilities-item">Furniture like <mark>chairs</mark>, <mark>dining</mark> &amp; <mark>tables</mark> are free for you</div>
+                        <div class="display-4-responsive facilities-item">Also <mark>vessels</mark> for cooking and serving are also <mark> free for use</mark></div>
                     </div>
                 </div>
             </div>
             <div class="container-fluid list-container">
                 <div class="text-center container">
-                    <div class="list-title-container"><h1>Here to Help</h1></div>
+                    <div class="list-title-container"><h1 class="display-1-5-responsive-2">Here to Help</h1></div>
                     <div class="list-container">
-                        <p class="display-4"><mark>Back drops</mark> can be arranged at reasonable rates <span class="font-grey-lighter">&nbsp;You can make your own arrangements too</span></p>
-                        <p class="display-4">Also people for <mark>mangala vaadhyam</mark>, <mark>catering</mark>, <mark>photography</mark> and other things can be referred at reasonable rates.</p>
-                        <p class="display-4"><mark>Audio-Video system</mark> and <mark>projector</mark> is also available at nominal cost.</p>
+                        <div class="display-4-responsive facilities-item"><mark>Back drops</mark> can be arranged at reasonable rates <span class="font-grey-lighter">&nbsp;You can make your own arrangements too</span></div>
+                        <div class="display-4-responsive facilities-item">Also people for <mark>mangala vaadhyam</mark>, <mark>catering</mark>, <mark>photography</mark> and other things can be referred at reasonable rates.</div>
+                        <div class="display-4-responsive facilities-item"><mark>Audio-Video system</mark> and <mark>projector</mark> is also available at nominal cost.</div>
                     </div>
                 </div>
             </div>
@@ -158,7 +158,24 @@
         </footer>
 
         <script type="text/javascript">
-            var navList = document.getElementById("navigationA");
+            const navList = document.getElementById("navigationA");
+            const featureBoxList = document.getElementsByClassName("feature-box");
+
+            if(window.innerWidth < 986){
+                    var maxHeight = 0;
+                    for(var i=0;i<featureBoxList.length;i++){
+                        var currentHeight = featureBoxList[i].offsetHeight;
+                        if(currentHeight > maxHeight){
+                            maxHeight = currentHeight;
+                        }
+                    }
+                    console.log(maxHeight + 'px');
+
+                    //setting the greatest height value to all elements
+                    for(var i=0;i<featureBoxList.length;i++){
+                        featureBoxList[i].style.height = maxHeight+'px';
+                    }
+                }
 
             window.onresize = function(){
                 if(window.innerWidth > 768){

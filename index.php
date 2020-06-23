@@ -77,7 +77,7 @@
         <!--The welcome text part-->
         <div class="container main-content-container">
             <div class="col-md-6 content-text">
-                <h2>Welcome to <span class="display-1-5 font-purple">Ashtalakshmi Thirumana Mahal</span></h2>
+                <h2 class="display-1-5-responsive">Welcome to <span class="display-1-5-responsive font-purple">Ashtalakshmi Thirumana Mahal</span></h2>
                 <p class="font-home-content1">ATM Hall invites you to host your <mark>weddings, receptions, marriages, birthday parties, engagements, naming ceremonies and other 
                     functions</mark>. ATM Hall is also ideal hall for exhibitions, sales and other promotional events. 
                     Functions have been continuously held here<mark>since 1988</mark>, which by itself is a proof of trust, 
@@ -87,17 +87,17 @@
 
             <div class="col-md-6 mainContent2 content-text2 main-content-padding">
                 <div class="container-fluid">
-                    <div class="container-fluid">
+                    <div class="container-fluid content-spacing-1">
                         <span class="display-2 font-purple">150+ Seats</span>
                         <p class="font-home-content2">in Main Hall</p>
                     </div>
 
-                    <div class="container-fluid">
+                    <div class="container-fluid content-spacing-1">
                         <span class="display-2 font-purple">80+ Seats</span>
                         <p class="font-home-content2">in Dining</p>
                     </div>
 
-                    <div class="container-fluid">
+                    <div class="container-fluid content-spacing-1">
                         <span class="display-2 font-purple">AC Rooms</span>
                         <p class="font-home-content2">not 1 but 2!</p>
                     </div>
