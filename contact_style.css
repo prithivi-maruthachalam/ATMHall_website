@@ -1,5 +1,5 @@
 .contact-major-content{
-    padding-top: 5px;
+    padding-top: 15px;
     padding-bottom: 20px;
 }
 
@@ -20,8 +20,13 @@
 
 @media(max-width:576px){
     .address-container{
-        margin-top: 20px;
+        margin-top: -10px;
         transition: margin 0.4s;
+    }
+
+    .contact-major-content{
+        padding-top: 5px;
+        padding-bottom: 20px;
     }
 }
 
@@ -43,4 +48,22 @@
         margin-top: 0px;
         transition: margin 0.6s;
     }
+}
+
+iframe{
+    height: 450px;
+    transition: all 0.4s;
+    margin-top: -10px;
+}
+
+@media(max-width:576px){
+    iframe{
+        height: 300px;
+        transition: all 0.4s;
+    }
+}
+
+.additional-contact-container{
+    padding-top: 5px;
+    padding-bottom: 5px;
 }

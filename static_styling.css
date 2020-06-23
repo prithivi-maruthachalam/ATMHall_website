@@ -116,6 +116,11 @@
         font-size: 25px;
         transition: font-size 0.6s;
     }
+
+    .display-3-6-responsive{
+        font-size: 22px;
+    }
+
     .display-4{
         font-size: 20px;
     }
@@ -212,6 +217,11 @@
             font-size: 15px;
             transition: all 0.4s;
         }
+
+        .display-3-6-responsive{
+            font-size: 20px;
+        }
+    
     }
 /*-----------------------------------FONT SIZES-------------------------------*/
 

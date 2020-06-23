@@ -88,7 +88,7 @@
 
         <!--title for facilities-->
         <div class="container text-center page-title-text">
-            <h1 class="display-1-5 font-purple">Gallery</h1>
+            <h1 class="display-1-5-responsive font-purple">Gallery</h1>
         </div>
         
         <!--The actual image content-->

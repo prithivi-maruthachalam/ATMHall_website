@@ -48,27 +48,32 @@
 
         <!--title for facilities-->
         <div class="container text-center page-title-text">
-            <h1 class="display-1-5 font-purple">Contact Us</h1>
+            <h1 class="display-1-5-responsive font-purple">Contact Us</h1>
         </div>
 
         <div class="container contact-major-content">
             <div class="col-lg-6">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7832.947736496372!2d77.042023!3d11.003029!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcecc3967269f254b!2sATM%20Hall%20-%20Ashtalakshmi%20Thirumana%20Mahal!5e0!3m2!1sen!2sin!4v1592675018416!5m2!1sen!2sin" 
-                    width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                    width="100%" height="450" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0">
                 </iframe>
             </div>
             <div class="col-lg-6">
                 <div class="contact-info-container">
                     <div class="call-actions-container">
                         <span class="font-purple display-1-5-responsive">Call Us</span>
-                        <p><a class="contact-phone" href="tel:+918940401780"><button class="btn-phone"><span class="glyphicon glyphicon-earphone"></span>&nbsp;+91 8940401780</button></a></p>
+                        <p><a class="contact-phone" href="tel:+918940401780"><button class="btn-phone btn-bottom"><span class="glyphicon glyphicon-earphone"></span>&nbsp;+91 8940401780</button></a></p>
+
+                        <div class="additional-contact-container">
+                            <div class="font-grey-lighter display-4-responsive">for Complaints &amp; Suggestions </div>
+                            <div class="font-grey-lighter display-3-responsive">+91 9843023376</div>
+                        </div>
                     </div>
 
                     <div class="address-container">
                         <span class="font-purple display-1-5-responsive">Find Us</span>
-                        <p class="display-3 font-grey">303, Trichy Road, Singanallur</p>
-                        <p class="display-3 font-grey">Coimbatore</p>
-                        <p class="display-3 font-grey">Tamil Nadu 641005</p>
+                        <div class="display-3-6-responsive font-grey">303, Trichy Road, Singanallur</div>
+                        <div class="display-3-6-responsive font-grey">Coimbatore</div>
+                        <div class="display-3-6-responsive font-grey">Tamil Nadu 641005</div>
                     </div>
                 </div>
             </div>
