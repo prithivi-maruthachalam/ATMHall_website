@@ -20,27 +20,23 @@
         <header class="main-header" id="primaryAccentBackground">
             <div class="container">
                 <div class="col-lg-6 top-logo-align">
-                    <div class="container-fluid">
-                        <h1 class="display-1-bold-responsive font-gold">ATM Hall</h1>
-                        <p class="display-3-responsive font-lightGrey">Ashtalakshmi Thirumana Mahal</p>
-                        <p class="display-3-responsive font-lightGrey">அஷ்டலட்சுமி திருமண மஹால்</p>
-                    </div>
-                    <div class="spacingDiv1"></div>                
+                    <div class="topBarSpacing"></div>
+                    
+                    <span class="display-1-bold-responsive font-gold negative-spacing">ATM Hall</span><br>
+                    <span class="display-3-responsive font-lightGrey">Ashtalakshmi Thirumana Mahal</span><br>
+                    <span class="display-3-responsive font-lightGrey">அஷ்டலட்சுமி திருமண மஹால்</span>
                 </div>
 
                 <div class="col-lg-6 text-center" role="navigation">
                     <div class="topBarSpacing"></div>
-                    <div class="container-fluid">
-                        <h2 class="font-gold topPhoneSize"> <span class="responsive-hide">For Booking</span>
-                            <a class="contact-phone" href="tel:+918940401780"><button class="btn-phone"><span class="glyphicon glyphicon-earphone"></span>&nbsp;+91 8940401780</button></a>
-                        </h2>
-                    </div>
+                    <span class="font-gold display-2 responsive-hide extra-mid-padding">For Booking</span>
+                    <a class="contact-phone" href="tel:+918940401780"><button class="btn-phone btn-top"><span class="glyphicon glyphicon-earphone"></span>&nbsp;+91 8940401780</button></a>
 
                     <div class="menu-container" onclick="collapseNav()">
-                        <span class="glyphicon glyphicon-menu-hamburger">
+                        <p>Menu <span class="glyphicon glyphicon-menu-hamburger"></p>
                     </div>
                     
-                    <ul class="nav nav-tabs nav-justified nav-hide" id="navigationA">
+                    <ul class="nav nav-tabs nav-justified nav-hide nav-negative-margin" id="navigationA">
                         <li class="nav-item active"><a class="navigationItem" href="index.php">Home</a></li>
                         <li class="nav-item"><a class="navigationItem" href="facilities.php">Facilities</a></li>
                         <li class="nav-item"><a class="navigationItem" href="gallery.php">Gallery</a></li>
