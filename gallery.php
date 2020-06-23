@@ -135,7 +135,7 @@
 
         <!--The footer-->
         <footer class="container-fluid footer-margin" id="primaryAccentBackground">
-            <div class="col-lg-5 bottom-nav-container primary-footer-padding">
+            <div class="col-lg-5 bottom-nav-container primary-footer-padding" id="bottom">
                 <span class="font-lightGrey display-3-5-responsive title-nav-alignment-padding responsive-hide">Quick Links</span>
                 <ul class="nav nav-tabs footer-nav" id="navigation">
                     <li class="nav-item"><a class="navigationItem-footer" href="index.php">Home</a></li>
@@ -169,12 +169,12 @@
         <div class="fab-group-container">
             <a href="#top">
                 <div class="fab text-center" id="up-button">
-                    <span class="glyphicon glyphicon-chevron-up move-icon">
+                <img src="images/icons/icons8-thick-arrow-pointing-up-96.png" class="glyphicon move-icon">
                 </div>
             </a>
             <a href="#bottom">
-                <div class="fab text-center" id="down-button">
-                    <span class="glyphicon glyphicon-chevron-down move-icon">
+                <div class="fab text-right" id="down-button">
+                    <img src="images/icons/icons8-thick-arrow-pointing-down-96.png" class="move-icon">
                 </div>
             </a>
         </div>
