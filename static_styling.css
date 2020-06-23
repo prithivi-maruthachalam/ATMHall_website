@@ -9,6 +9,12 @@
     margin-top: 2px;
 }
 
+.btn-bottom{
+    padding: 6px;
+    font-size: 19px;
+    margin-top: 2px;
+}
+
 .btn-phone {
     color: #6e124f; 
     background-color: rgb(202, 166, 74);;
@@ -198,8 +204,8 @@
     }
 
     .primary-footer-padding{
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 10px;
+        padding-bottom: 5px;
         padding-right: -10px;
         padding-left: -10px;
     }
@@ -246,11 +252,6 @@
             padding-left: -10px;
             transition: padding 0.6s;
         }
-    
-        .responsive-hide{
-            display: none;
-            transition: padding 0.6s;
-        }
 
         .main-header{
             padding-bottom: 5px;
@@ -286,7 +287,7 @@
         transition: display 0.6s;
     }
 
-    @media(max-width:576px){
+    @media(max-width:1200px){
         .responsive-hide{
             display: none;
             transition: padding 0.6s;
@@ -386,18 +387,6 @@
         color: rgb(235, 235, 235)!important;
         font-size: 18px !important;
         transition: color 0.2s, font-size 0.2s;
-    }
-
-    .footer-margin{
-        margin-top: 20px;
-        transition: margin 0.6s;
-    }
-
-    @media(max-width:768px){
-        .footer-margin{
-            margin-top: 0px;
-            transition: margin 0.6s;
-        }
     }
 
     @media(max-width:576px){

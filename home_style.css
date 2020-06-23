@@ -91,7 +91,7 @@ body{
 .card{
     padding-top: 0px;
     padding-bottom: 5px;
-    background-color: #ececec;
+    background-color: #e7e5e5;
 }
 
 .img-text-block{
@@ -102,4 +102,16 @@ body{
     padding: 10px!important;
     font-size: 17px;
     border: none;
+}
+
+.footer-margin{
+    margin-top: 20px;
+    transition: margin 0.6s;
+}
+
+@media(max-width:768px){
+    .footer-margin{
+        margin-top: 0px;
+        transition: margin 0.6s;
+    }
 }
