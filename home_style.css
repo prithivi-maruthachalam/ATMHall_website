@@ -126,3 +126,11 @@ body{
 .content-spacing-1{
     margin-bottom: 7px;
 }
+
+.carousel-image-container{
+    padding: 0px;
+}
+
+.carousel{
+    overflow: hidden!important;
+}
