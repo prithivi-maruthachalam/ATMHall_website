@@ -135,10 +135,22 @@ body{
     overflow: hidden!important;
 }
 
-
+.carousel-inner > .carousel-alt-item{
+    display: none;
+}
 
 .carousel-inner > .current{
     display: block;
     opacity: 1!important;
     transition: all 0.4s;
+}
+
+.conditional-display{
+    display: block;
+}
+
+@media(max-width: 992px){
+    .conditional-display{
+        display: none;
+    }
 }

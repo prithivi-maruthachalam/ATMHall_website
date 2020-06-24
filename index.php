@@ -55,7 +55,7 @@
                         <div class="carousel-image-container col-md-6 col-xs-12">
                             <img src="content/carouselImages/1.JPG" class="img-responsive">
                         </div>
-                        <div class="carousel-image-container col-md-6 col-xs-12">
+                        <div class="carousel-image-container col-md-6 col-xs-12 conditional-display">
                             <img src="content/carouselImages/2.JPG" class="img-responsive">
                         </div>
                     </div>
@@ -74,7 +74,7 @@
                         <div class="carousel-image-container col-md-6 col-xs-12">
                             <img src="content/carouselImages/3.JPG" class="img-responsive">
                         </div>
-                        <div class="carousel-image-container col-md-6 col-xs-12">
+                        <div class="carousel-image-container col-md-6 col-xs-12 conditional-display">
                             <img src="content/carouselImages/4.JPG" class="img-responsive">
                         </div>
                     </div>
@@ -93,7 +93,7 @@
                         <div class="carousel-image-container col-md-6 col-xs-12">
                             <img src="content/carouselImages/5.JPG" class="img-responsive">
                         </div>
-                        <div class="carousel-image-container col-md-6 col-xs-12">
+                        <div class="carousel-image-container col-md-6 col-xs-12 conditional-display">
                             <img src="content/carouselImages/6.JPG" class="img-responsive">
                         </div>
                     </div>
@@ -259,12 +259,17 @@
                 var currentIndex = currentImage.index();
                 
                 currentImage.removeClass('current');
-                currentImage.next('.item').addClass('current');
-
-                if(currentIndex + 1 == images.length){
-                    container.find('.item').first().addClass('current');
+                if(window.innerWidth > 992){
+                    currentImage.next('.item').next('.item').addClass('current');
+                    if(currentIndex + 2  == images.length){
+                        container.find('.item').first().addClass('current');
+                    }
+                } else {
+                    currentImage.next('.item').addClass('current');
+                    if(currentIndex + 1 == images.length){
+                        container.find('.item').first().addClass('current');
+                    }
                 }
-
             },carouselTiming);
         </script>
 
