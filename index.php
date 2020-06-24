@@ -48,30 +48,9 @@
 
 
         <!--The image slide show thing - aka - a CAROUSEL-->
-        <div id="mainImagesCarousel" class="carousel slide" data-ride="carousel">
-            <!--The actual images go here-->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img class="center-cropped" src="images/Backdrops/01/DSC_0792.jpg" alt="Carousel Image 1">
-                </div>
-                <div class="item">
-                    <img class="center-cropped" src="images/Dining/DSC_5186.jpg" alt="Carousel Image 2">
-                </div>
-                <div class="item">
-                    <img class="center-cropped" src="images/Main hall/DSC_5191.jpg" alt="Carousel Image 3">
-                </div>
-            </div>
-
-            <!--Controls for the carousel-->
-            <a class="left carousel-control" href="#mainImagesCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#mainImagesCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only"></span>
-            </a>
-        </div> 
+        <div id="mainImagesCarousel" class="container-fluid">
+            
+        </div>
 
 
         <!--The welcome text part-->

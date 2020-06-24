@@ -17,9 +17,16 @@ body{
     }
 }
 
+.carousel{
+    max-height: 10%;
+}
+
+.carousel .carousel-inner{
+    max-height: 100%;
+}
 
 .carousel .item{
-    max-height: 400px;
+    max-height: 100%;
 }
 
 .center-cropped {
