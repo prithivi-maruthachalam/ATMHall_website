@@ -46,11 +46,45 @@
             </div>
         </header>
 
+        <div id="mainImagesCarousel" class="carousel slide" data-ride="carousel">
+            <!--The actual images go here-->
+            <div class="carousel-inner">
+                
+                <div class="item active">
+                    <div class="carousel-images-row">
+                        <div class="carousel-image-container col-md-6 col-xs-12">
+                            <img src="content/carouselImages/1.JPG" class="img-responsive">
+                        </div>
+                        <div class="carousel-image-container col-md-6 col-xs-12">
+                            <img src="content/carouselImages/2.JPG" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
 
-        <!--The image slide show thing - aka - a CAROUSEL-->
-        <div id="mainImagesCarousel" class="container-fluid">
-            
-        </div>
+                <div class="item">
+                    <div class="carousel-images-row">
+                        <div class="carousel-image-container col-md-6 col-xs-12">
+                            <img src="content/carouselImages/3.JPG" class="img-responsive">
+                        </div>
+                        <div class="carousel-image-container col-md-6 col-xs-12">
+                            <img src="content/carouselImages/4.JPG" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="carousel-images-row">
+                        <div class="carousel-image-container col-md-6 col-xs-12">
+                            <img src="content/carouselImages/5.JPG" class="img-responsive">
+                        </div>
+                        <div class="carousel-image-container col-md-6 col-xs-12">
+                            <img src="content/carouselImages/6.JPG" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div> 
 
 
         <!--The welcome text part-->
