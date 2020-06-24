@@ -46,11 +46,11 @@
             </div>
         </header>
 
-        <div id="mainImagesCarousel" class="carousel slide" data-ride="carousel">
+        <div id="mainImagesCarousel" class="carousel">
             <!--The actual images go here-->
             <div class="carousel-inner">
                 
-                <div class="item active">
+                <div class="item">
                     <div class="carousel-images-row">
                         <div class="carousel-image-container col-md-6 col-xs-12">
                             <img src="content/carouselImages/1.JPG" class="img-responsive">
@@ -61,12 +61,28 @@
                     </div>
                 </div>
 
-                <div class="item">
+                <div class="item carousel-alt-item">
+                    <div class="carousel-images-row">
+                        <div class="carousel-image-container col-xs-12">
+                            <img src="content/carouselImages/2.JPG" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item current">
                     <div class="carousel-images-row">
                         <div class="carousel-image-container col-md-6 col-xs-12">
                             <img src="content/carouselImages/3.JPG" class="img-responsive">
                         </div>
                         <div class="carousel-image-container col-md-6 col-xs-12">
+                            <img src="content/carouselImages/4.JPG" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item carousel-alt-item">
+                    <div class="carousel-images-row">
+                        <div class="carousel-image-container col-xs-12">
                             <img src="content/carouselImages/4.JPG" class="img-responsive">
                         </div>
                     </div>
@@ -78,6 +94,14 @@
                             <img src="content/carouselImages/5.JPG" class="img-responsive">
                         </div>
                         <div class="carousel-image-container col-md-6 col-xs-12">
+                            <img src="content/carouselImages/6.JPG" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item carousel-alt-item">
+                    <div class="carousel-images-row">
+                        <div class="carousel-image-container col-xs-12">
                             <img src="content/carouselImages/6.JPG" class="img-responsive">
                         </div>
                     </div>
@@ -224,6 +248,24 @@
                     navList.style.height = "0px";
                 }
             }
+
+            //the function for carousel
+            const carouselTiming = 5000;
+            const container = $(".carousel-inner");
+
+            setInterval(function(){
+                var images = container.find('.item');
+                var currentImage = container.find('.current');
+                var currentIndex = currentImage.index();
+                
+                currentImage.removeClass('current');
+                currentImage.next('.item').addClass('current');
+
+                if(currentIndex + 1 == images.length){
+                    container.find('.item').first().addClass('current');
+                }
+
+            },carouselTiming);
         </script>
 
     </body>

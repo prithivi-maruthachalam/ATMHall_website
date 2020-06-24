@@ -134,3 +134,11 @@ body{
 .carousel{
     overflow: hidden!important;
 }
+
+
+
+.carousel-inner > .current{
+    display: block;
+    opacity: 1!important;
+    transition: all 0.4s;
+}
