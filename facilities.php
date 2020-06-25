@@ -1,3 +1,10 @@
+<?php
+    //read JSON file for content
+    $filePathForContent = "content/siteContent.json";
+    $content = file_get_contents($filePathForContent);
+    $siteData = json_decode($content,true);
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -30,7 +37,7 @@
                 <div class="col-lg-6 text-center" role="navigation">
                     <div class="topBarSpacing"></div>
                     <span class="font-gold display-2 responsive-hide extra-mid-padding">For Booking</span>
-                    <a class="contact-phone" href="tel:+918940401780"><button class="btn-phone btn-top"><span class="glyphicon glyphicon-earphone"></span>&nbsp;+91 8940401780</button></a>
+                    <a class="contact-phone" href="tel:<?php echo $siteData["phone-number"];?>"><button class="btn-phone btn-top"><span class="glyphicon glyphicon-earphone"></span>&nbsp;<?php echo $siteData["phone-number"]; ?></button></a>
 
                     <div class="menu-container" onclick="collapseNav()">
                         <p>Menu <span class="glyphicon glyphicon-menu-hamburger"></p>
@@ -53,75 +60,36 @@
 
         <!--featured facilities-->
         <div class="container text-center features-outer-container">
-            <div class="col-lg-2 col-md-4 col-xs-6 feature-container">
-                <div class="feature-box">
-                    <span class="display-feature-responsive font-lightGrey">150+ seats in Main Hall</span>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-xs-6 feature-container">
-                <div class="feature-box">
-                    <span class="display-feature-responsive font-lightGrey">90+ Seats in Dining Hall</span>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-xs-6 feature-container">
-                <div class="feature-box">
-                    <span class="display-feature-responsive font-lightGrey">Air Cooled</span>
-                </div>
-            </div>
-        
-            <div class="clearfix visible-md-block"></div>
-            
-            <div class="col-lg-2 col-md-4 col-xs-6 feature-container">
-                <div class="feature-box">
-                    <span class="display-feature-responsive font-lightGrey">Kitchen with complimentary vessels</span>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-xs-6 feature-container">
-                <div class="feature-box">
-                    <span class="display-feature-responsive font-lightGrey">Generator Power Backup</span>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-xs-6 feature-container">
-                <div class="feature-box">
-                    <span class="display-feature-responsive font-lightGrey">Complimentary Tables &#38; Chains</span>
-                </div>
-            </div>
+            <?php
+                $featuredFacilities = $siteData["facilities-features"];
+                foreach($featuredFacilities as $facility){
+                    echo '<div class="col-lg-2 col-md-4 col-xs-6 feature-container">
+                        <div class="feature-box">
+                            <span class="display-feature-responsive font-lightGrey">'.$facility["feature"].'</span>
+                        </div>
+                    </div>';
+                }
+            ?>
         </div>
     
         <div class="container list-area-container">
-            <div class="container-fluid list-container">
-                    <div class="text-center container">
-                        <div class="list-title-container"><h1 class="display-1-5-responsive-2">Space &#38; Capacity</h1></div>
-                        <div class="list-container" id="spacing-facilities">
-                            <div class="display-4-responsive facilities-item"> Main hall has <mark>seating</mark> facility of <mark>150</mark></div>
-                            <div class="display-4-responsive facilities-item"> <mark>Dining</mark> can accomodate <mark>90 people</mark> </div>
-                            <div class="display-4-responsive facilities-item"> <mark>Welcome Area</mark> can take <mark> 50 </mark> persons.</div>
-                            <div class="display-4-responsive facilities-item"> There are <mark>air-conditioned rooms</mark> <span class="font-grey-lighter"> &nbsp; These rooms can also be used as Bride &#038; Groom rooms</span> </div>
-                            <div class="display-4-responsive facilities-item"> A <mark>kitchen</mark> is <mark>attached</mark> to the facility  <span class="font-grey-lighter">&nbsp; Catering from outside also allowed</span></div>
-                        </div>
-                    </div>
-            </div>
-            <div class="container-fluid list-container">
-                <div class="text-center container">
-                    <div class="list-title-container"><h1 class="display-1-5-responsive-2">Just for You</h1></div>
-                    <div class="list-container">
-                        <div class="display-4-responsive facilities-item">The main hall is <mark>air cooled</mark> with tent cooler</div>
-                        <div class="display-4-responsive facilities-item">Power backup is available with a <mark>modern generator</mark></div>
-                        <div class="display-4-responsive facilities-item">Furniture like <mark>chairs</mark>, <mark>dining</mark> &amp; <mark>tables</mark> are free for you</div>
-                        <div class="display-4-responsive facilities-item">Also <mark>vessels</mark> for cooking and serving are also <mark> free for use</mark></div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid list-container">
-                <div class="text-center container">
-                    <div class="list-title-container"><h1 class="display-1-5-responsive-2">Here to Help</h1></div>
-                    <div class="list-container">
-                        <div class="display-4-responsive facilities-item"><mark>Back drops</mark> can be arranged at reasonable rates <span class="font-grey-lighter">&nbsp;You can make your own arrangements too</span></div>
-                        <div class="display-4-responsive facilities-item">Also people for <mark>mangala vaadhyam</mark>, <mark>catering</mark>, <mark>photography</mark> and other things can be referred at reasonable rates.</div>
-                        <div class="display-4-responsive facilities-item"><mark>Audio-Video system</mark> and <mark>projector</mark> is also available at nominal cost.</div>
-                    </div>
-                </div>
-            </div>
+            <?php
+                $facilityGroups = $siteData["facilities-group"];
+                foreach($facilityGroups as $facilityGroup){
+                    echo '<div class="container-fluid list-container">
+                            <div class="text-center container">
+                                <div class="list-title-container"><h1 class="display-1-5-responsive-2">'.$facilityGroup["title"].'</h1></div>
+                                <div class="list-container" id="spacing-facilities">';
+                                foreach($facilityGroup["items"] as $facilityItem){
+                                        echo '<div class="display-4-responsive facilities-item">'.$facilityItem["main-text"].'
+                                            <span class="font-grey-lighter">&nbsp;'.$facilityItem["extra-text-optional"].'</span></div>';
+                                }
+                                
+                                echo '</div>
+                            </div>
+                    </div>';
+                }
+            ?>
         </div>
 
 
@@ -138,13 +106,13 @@
             </div>
             <div class="col-lg-3 responsive-footer-alignment primary-footer-padding">
                 <span class="display-3-responsive font-lightGrey">Address</span>
-                <div class="font-lightGrey display-5">303, Trichy Road, Singanallur</div>
-                <div class="font-lightGrey display-5">Coimbatore</div>
-                <div class="font-lightGrey display-5">Tamil Nadu 641005</div>
+                <div class="font-lightGrey display-5"><?php echo $siteData["address-line-1"]; ?></div>
+                <div class="font-lightGrey display-5"><?php echo $siteData["address-line-2"]; ?></div>
+                <div class="font-lightGrey display-5"><?php echo $siteData["address-line-3"]; ?></div>
             </div>
             <div class="col-lg-4 footer-phone-container primary-footer-padding">
                 <span class="font-gold display-3-responsive responsive-hide">For Booking</span> 
-                <p class="padding-top-1"><a class="contact-phone" href="tel:+918940401780"><button class="btn-phone btn-bottom"><span class="glyphicon glyphicon-earphone"></span>&nbsp;+91 8940401780</button></a></p>
+                <p class="padding-top-1"><a class="contact-phone" href="tel:<?php echo $siteData["phone-number"];?>"><button class="btn-phone btn-bottom"><span class="glyphicon glyphicon-earphone"></span>&nbsp;<?php echo $siteData["phone-number"]; ?></button></a></p>
             </div>
         </footer>
 

@@ -1,3 +1,9 @@
+<?php
+    //read JSON file for content
+    $filePathForContent = "content/siteContent.json";
+    $content = file_get_contents($filePathForContent);
+    $siteData = json_decode($content,true);
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -30,7 +36,7 @@
                 <div class="col-lg-6 text-center" role="navigation">
                     <div class="topBarSpacing"></div>
                     <span class="font-gold display-2 responsive-hide extra-mid-padding">For Booking</span>
-                    <a class="contact-phone" href="tel:+918940401780"><button class="btn-phone btn-top"><span class="glyphicon glyphicon-earphone"></span>&nbsp;+91 8940401780</button></a>
+                    <a class="contact-phone" href="tel:<?php echo $siteData["phone-number"];?>"><button class="btn-phone btn-top"><span class="glyphicon glyphicon-earphone"></span>&nbsp;<?php echo $siteData["phone-number"]; ?></button></a>
 
                     <div class="menu-container" onclick="collapseNav()">
                         <p>Menu <span class="glyphicon glyphicon-menu-hamburger"></p>
@@ -61,19 +67,19 @@
                 <div class="contact-info-container">
                     <div class="call-actions-container">
                         <span class="font-purple display-1-5-responsive">Call Us</span>
-                        <p><a class="contact-phone" href="tel:+918940401780"><button class="btn-phone btn-bottom"><span class="glyphicon glyphicon-earphone"></span>&nbsp;+91 8940401780</button></a></p>
+                        <p><a class="contact-phone" href="tel:<?php echo $siteData["phone-number"];?>"><button class="btn-phone btn-bottom"><span class="glyphicon glyphicon-earphone"></span>&nbsp;<?php echo $siteData["phone-number"]; ?></button></a></p>
 
                         <div class="additional-contact-container">
                             <div class="font-grey-lighter display-4-responsive">for Complaints &amp; Suggestions </div>
-                            <div class="font-grey-lighter display-3-responsive">+91 9843023376</div>
+                            <div class="font-grey-lighter display-3-responsive"><?php echo $siteData["phone-number-for-complaints"]; ?></div>
                         </div>
                     </div>
 
                     <div class="address-container">
                         <span class="font-purple display-1-5-responsive">Find Us</span>
-                        <div class="display-3-6-responsive font-grey">303, Trichy Road, Singanallur</div>
-                        <div class="display-3-6-responsive font-grey">Coimbatore</div>
-                        <div class="display-3-6-responsive font-grey">Tamil Nadu 641005</div>
+                        <div class="display-3-6-responsive font-grey"><?php echo $siteData["address-line-1"]; ?></div>
+                        <div class="display-3-6-responsive font-grey"><?php echo $siteData["address-line-2"]; ?></div>
+                        <div class="display-3-6-responsive font-grey"><?php echo $siteData["address-line-3"]; ?></div>
                     </div>
                 </div>
             </div>
@@ -93,13 +99,13 @@
             </div>
             <div class="col-lg-3 responsive-footer-alignment primary-footer-padding">
                 <span class="display-3-responsive font-lightGrey">Address</span>
-                <div class="font-lightGrey display-5">303, Trichy Road, Singanallur</div>
-                <div class="font-lightGrey display-5">Coimbatore</div>
-                <div class="font-lightGrey display-5">Tamil Nadu 641005</div>
+                <div class="font-lightGrey display-5"><?php echo $siteData["address-line-1"]; ?></div>
+                <div class="font-lightGrey display-5"><?php echo $siteData["address-line-2"]; ?></div>
+                <div class="font-lightGrey display-5"><?php echo $siteData["address-line-3"]; ?></div>
             </div>
             <div class="col-lg-4 footer-phone-container primary-footer-padding">
                 <span class="font-gold display-3-responsive responsive-hide">For Booking</span> 
-                <p class="padding-top-1"><a class="contact-phone" href="tel:+918940401780"><button class="btn-phone btn-bottom"><span class="glyphicon glyphicon-earphone"></span>&nbsp;+91 8940401780</button></a></p>
+                <p class="padding-top-1"><a class="contact-phone" href="tel:<?php echo $siteData["phone-number"];?>"><button class="btn-phone btn-bottom"><span class="glyphicon glyphicon-earphone"></span>&nbsp;<?php echo $siteData["phone-number"]; ?></button></a></p>
             </div>
         </footer>
 
