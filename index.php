@@ -1,3 +1,27 @@
+<?php
+    //getting images for carousel
+    $carouselImagesDir = "content/carouselImages/";
+    $carouselImageFiles = scandir($carouselImagesDir);
+    $carouselImages = array();
+
+    foreach($carouselImageFiles as $carouselImageFile){
+        if($carouselImageFile == ".." || $carouselImageFile == "."){
+            continue;
+        } 
+        $carouselImage = array();
+        $carouselImageURL = $carouselImagesDir.$carouselImageFile;
+        array_push($carouselImage,$carouselImageURL);
+        $altText = explode("_",$carouselImageURL)[1];
+        array_push($carouselImage,explode(".",$altText)[0]);
+        
+        array_push($carouselImages,$carouselImage);
+    }
+
+    //for each $carouselImage
+    //=> 0 is the image URL
+    //=>1 is the alt text
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -49,64 +73,32 @@
         <div id="mainImagesCarousel" class="carousel">
             <!--The actual images go here-->
             <div class="carousel-inner">
-                
-                <div class="item">
-                    <div class="carousel-images-row">
-                        <div class="carousel-image-container col-md-6 col-xs-12">
-                            <img src="content/carouselImages/1.JPG" class="img-responsive">
+                <?php
+                    $index = 0;
+                    while($index < sizeof($carouselImages) - 1){                    
+                        echo '<div class="item">
+                            <div class="carousel-images-row">
+                                <div class="carousel-image-container col-md-6 col-xs-12">';
+                                echo '<img src="'.$carouselImages[$index][0].'" class="img-responsive" alt="'.$carouselImages[$index][1].'">';
+                                echo '</div>
+                                <div class="carousel-image-container col-md-6 col-xs-12 conditional-display">';
+                                echo '<img src="'.$carouselImages[$index+1][0].'" class="img-responsive" alt="'.$carouselImages[$index+1][1].'">';
+                                echo '</div>
+                            </div>
                         </div>
-                        <div class="carousel-image-container col-md-6 col-xs-12 conditional-display">
-                            <img src="content/carouselImages/2.JPG" class="img-responsive">
-                        </div>
-                    </div>
-                </div>
 
-                <div class="item carousel-alt-item">
-                    <div class="carousel-images-row">
-                        <div class="carousel-image-container col-xs-12">
-                            <img src="content/carouselImages/2.JPG" class="img-responsive">
-                        </div>
-                    </div>
-                </div>
+                        <div class="item carousel-alt-item">
+                            <div class="carousel-images-row">
+                                <div class="carousel-image-container col-xs-12">';
+                                echo '<img src="'.$carouselImages[$index+1][0].'" class="img-responsive" alt="'.$carouselImages[$index+1][1].'">';
+                                echo '</div>
+                            </div>
+                        </div>';
 
-                <div class="item">
-                    <div class="carousel-images-row">
-                        <div class="carousel-image-container col-md-6 col-xs-12">
-                            <img src="content/carouselImages/3.JPG" class="img-responsive">
-                        </div>
-                        <div class="carousel-image-container col-md-6 col-xs-12 conditional-display">
-                            <img src="content/carouselImages/4.JPG" class="img-responsive">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item carousel-alt-item">
-                    <div class="carousel-images-row">
-                        <div class="carousel-image-container col-xs-12">
-                            <img src="content/carouselImages/4.JPG" class="img-responsive">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item current">
-                    <div class="carousel-images-row">
-                        <div class="carousel-image-container col-md-6 col-xs-12">
-                            <img src="content/carouselImages/5.JPG" class="img-responsive">
-                        </div>
-                        <div class="carousel-image-container col-md-6 col-xs-12 conditional-display">
-                            <img src="content/carouselImages/6.JPG" class="img-responsive">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item carousel-alt-item">
-                    <div class="carousel-images-row">
-                        <div class="carousel-image-container col-xs-12">
-                            <img src="content/carouselImages/6.JPG" class="img-responsive">
-                        </div>
-                    </div>
-                </div>
-
+                        //then update the index
+                        $index += 2;
+                    }
+                ?>
             </div>
         </div> 
 
@@ -248,6 +240,23 @@
                 var currentImage = container.find('.current');
                 var height = currentImage.prop('scrollHeight');
                 carousel.height(height);
+
+                if(window.innerWidth < 992){
+                    var currentImage = container.find('.current');
+                    var currentIndex = currentImage.index();
+
+                    var currentItem = currentImage.prop('classList');
+                    if(classList.contains('carousel-alt-item')){
+                        var height = currentImage.next('.item').prop('scrollHeight');
+                        carousel.height(height);
+                        currentImage.next('.item').addClass('current');
+                        if(currentIndex + 2  == images.length || currentIndex + 1 == images.length){
+                        var height = container.find('.item').first().prop('scrollHeight');
+                        carousel.height(height);
+                        container.find('.item').first().addClass('current');
+                    }
+                    }
+                }
             };
 
             function collapseNav(){
@@ -277,10 +286,17 @@
 
                 currentImage.removeClass('current');
                 if(window.innerWidth > 992){
-                    var height = currentImage.next('.item').next('.item').prop('scrollHeight');
+                    var nextItem = currentImage.next('.item');
+                    var classList = nextItem.prop('classList');
+                    console.log(classList);
+                    if(classList.contains('carousel-alt-item')){
+                        nextItem = nextItem.next('.item');
+                    }
+
+                    var height = nextItem.prop('scrollHeight');
                     carousel.height(height);
-                    currentImage.next('.item').next('.item').addClass('current');
-                    if(currentIndex + 2  == images.length){
+                    nextItem.addClass('current');
+                    if(currentIndex + 2  == images.length || currentIndex + 1 == images.length){
                         var height = container.find('.item').first().prop('scrollHeight');
                         carousel.height(height);
                         container.find('.item').first().addClass('current');
@@ -289,7 +305,7 @@
                     var height = currentImage.next('.item').prop('scrollHeight');
                     carousel.height(height);
                     currentImage.next('.item').addClass('current');
-                    if(currentIndex + 1 == images.length){
+                    if(currentIndex + 2  == images.length || currentIndex + 1 == images.length){
                         var height = container.find('.item').first().prop('scrollHeight');
                         carousel.height(height);
                         container.find('.item').first().addClass('current');

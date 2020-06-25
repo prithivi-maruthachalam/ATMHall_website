@@ -41,12 +41,6 @@
     }
     //this is going to hold all our images
     
-    
-
-
-
-
-    
     //$imageObjectsList contains 3 lists, which are by themselves, lists of our image objects
 
     //each image object contains
@@ -55,6 +49,8 @@
     // 2 => alt text for the image - for SEO
     // 3 => the relative URL of the image 
 ?>
+
+
 <!DOCTYPE html>
 <html>
     <head>
