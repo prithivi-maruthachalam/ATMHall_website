@@ -232,12 +232,22 @@
         <script type="text/javascript">
             var navList = document.getElementById("navigationA");
 
+            //carousel constants
+            const carouselTiming = 5000;
+            const container = $(".carousel-inner");
+            const carousel = $('.carousel')
+
             window.onresize = function(){
                 if(window.innerWidth > 768){
                     navList.style.height = "60px";
                 } else if(window.innerWidth <= 768){
                     navList.style.height = "0px";
                 }
+
+                //for sizing the carousel
+                var currentImage = container.find('.current');
+                var height = currentImage.prop('scrollHeight');
+                carousel.height(height);
             };
 
             function collapseNav(){
@@ -249,24 +259,55 @@
                 }
             }
 
-            //the function for carousel
-            const carouselTiming = 5000;
-            const container = $(".carousel-inner");
+            //carousel first-time
+                var images = container.find('.item');
+                var currentImage = container.find('.current');
+                var currentIndex = currentImage.index();
 
+                currentImage.removeClass('current');
+                if(window.innerWidth > 992){
+                    var height = currentImage.next('.item').next('.item').prop('scrollHeight');
+                    carousel.height(height);
+                    currentImage.next('.item').next('.item').addClass('current');
+                    if(currentIndex + 2  == images.length){
+                        var height = container.find('item').first().prop('scrollHeight');
+                        carousel.height(height);
+                        container.find('.item').first().addClass('current');
+                    }
+                } else {
+                    var height = currentImage.next('.item').prop('scrollHeight');
+                    carousel.height(height);
+                    currentImage.next('.item').addClass('current');
+                    if(currentIndex + 1 == images.length){
+                        var height = container.find('item').first().prop('scrollHeight');
+                        carousel.height(height);
+                        container.find('.item').first().addClass('current');
+                    }
+                }
+
+            //the function for carousel
             setInterval(function(){
                 var images = container.find('.item');
                 var currentImage = container.find('.current');
                 var currentIndex = currentImage.index();
-                
+
                 currentImage.removeClass('current');
                 if(window.innerWidth > 992){
+                    var height = currentImage.next('.item').next('.item').prop('scrollHeight');
+                    carousel.height(height);
                     currentImage.next('.item').next('.item').addClass('current');
                     if(currentIndex + 2  == images.length){
+                        var height = container.find('item').first().prop('scrollHeight');
+                        carousel.height(height);
                         container.find('.item').first().addClass('current');
                     }
                 } else {
+                    var height = currentImage.next('.item').prop('scrollHeight');
+                    carousel.height(height);
                     currentImage.next('.item').addClass('current');
                     if(currentIndex + 1 == images.length){
+                        var height = container.find('item').first().prop('scrollHeight');
+                        carousel.height(height);
                         container.find('.item').first().addClass('current');
                     }
                 }
