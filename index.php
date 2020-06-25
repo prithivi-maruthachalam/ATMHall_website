@@ -51,6 +51,11 @@
     $filePathForContent = "content/siteContent.json";
     $content = file_get_contents($filePathForContent);
     $siteData = json_decode($content,true);
+    if(sizeof($siteData) <= 0){
+        $filePathForContent = "content/siteContentBackup.json";
+        $content = file_get_contents($filePathForContent);
+        $siteData = json_decode($content,true);
+    }
 ?>
 
 <!DOCTYPE html>
