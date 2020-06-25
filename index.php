@@ -69,7 +69,7 @@
                     </div>
                 </div>
 
-                <div class="item current">
+                <div class="item">
                     <div class="carousel-images-row">
                         <div class="carousel-image-container col-md-6 col-xs-12">
                             <img src="content/carouselImages/3.JPG" class="img-responsive">
@@ -88,7 +88,7 @@
                     </div>
                 </div>
 
-                <div class="item">
+                <div class="item current">
                     <div class="carousel-images-row">
                         <div class="carousel-image-container col-md-6 col-xs-12">
                             <img src="content/carouselImages/5.JPG" class="img-responsive">
@@ -233,7 +233,7 @@
             var navList = document.getElementById("navigationA");
 
             //carousel constants
-            const carouselTiming = 5000;
+            const carouselTiming = 10000;
             const container = $(".carousel-inner");
             const carousel = $('.carousel')
 
@@ -260,30 +260,14 @@
             }
 
             //carousel first-time
-                var images = container.find('.item');
-                var currentImage = container.find('.current');
-                var currentIndex = currentImage.index();
+            var images = container.find('.item');
+            var currentImage = container.find('.current');
+            var currentIndex = currentImage.index();
 
-                currentImage.removeClass('current');
-                if(window.innerWidth > 992){
-                    var height = currentImage.next('.item').next('.item').prop('scrollHeight');
-                    carousel.height(height);
-                    currentImage.next('.item').next('.item').addClass('current');
-                    if(currentIndex + 2  == images.length){
-                        var height = container.find('item').first().prop('scrollHeight');
-                        carousel.height(height);
-                        container.find('.item').first().addClass('current');
-                    }
-                } else {
-                    var height = currentImage.next('.item').prop('scrollHeight');
-                    carousel.height(height);
-                    currentImage.next('.item').addClass('current');
-                    if(currentIndex + 1 == images.length){
-                        var height = container.find('item').first().prop('scrollHeight');
-                        carousel.height(height);
-                        container.find('.item').first().addClass('current');
-                    }
-                }
+            console.log("changing");
+            var height = container.find('.item').first().prop('scrollHeight');
+            carousel.height(height);
+            container.find('.item').first().addClass('current');
 
             //the function for carousel
             setInterval(function(){
@@ -297,7 +281,7 @@
                     carousel.height(height);
                     currentImage.next('.item').next('.item').addClass('current');
                     if(currentIndex + 2  == images.length){
-                        var height = container.find('item').first().prop('scrollHeight');
+                        var height = container.find('.item').first().prop('scrollHeight');
                         carousel.height(height);
                         container.find('.item').first().addClass('current');
                     }
@@ -306,7 +290,7 @@
                     carousel.height(height);
                     currentImage.next('.item').addClass('current');
                     if(currentIndex + 1 == images.length){
-                        var height = container.find('item').first().prop('scrollHeight');
+                        var height = container.find('.item').first().prop('scrollHeight');
                         carousel.height(height);
                         container.find('.item').first().addClass('current');
                     }
