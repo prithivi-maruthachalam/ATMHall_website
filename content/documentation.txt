@@ -1,0 +1,32 @@
+branding FOLDER
+    -This contains the image for the favicon
+    -It is the small icon on the browser tab
+    -The icon should be named "favicon.png"
+
+carouselImages FOLDER
+    -This contains the images for the carosel (the slide show)
+    -There can only be an even number of images here
+    -Each image should be named as such - "number_alt text.JPG"
+
+featuredCardImages FOLDER
+    -This contains the images for the 3 cards at the bottom of the home page
+    -It is advised that this folder only contains 3 images
+    -Each image should be name as such = "number_title text_additional text_alt text.JPG"
+
+galleryImages FOLDER    
+    -The images are split into three folders, each for one coloumn
+    -The name should be names as such - "number_text to be displayed under_alt text.JPG"
+
+siteContent.json
+    -This one contains the content in the form "item":"content" 
+    -The {} - indicate one entire block or object
+    -The [] - indicate a list of items that are for the same kind of item, but with different content
+    -Seperate consecutive objects using commas
+    -If the content for a certain item is empty, use ""
+    -EVEN A SMALL ERROR IN THIS FILE WILL CAUSE THE SITE TO BE PREDOMINANTLY EMPTY
+
+siteContentBackup.json
+    -If there is an error in the siteContent.json file, it will automatically 
+        try to use this backup version to fill the site with content, so 
+        COPY THE siteContent.json FILE TO siteContentBackup.json WHENEVER siteContent.json
+        IS AT A WORKING STATE
