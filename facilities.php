@@ -58,7 +58,9 @@
                         "isPartOf":{"@id":"http://www.atmhall.in/#website"},
                         "image":{"@type":"ImageObject","@id":"http://www.atmhall.in/facilities.php#primaryimage","url":"http://www.atmhall.in/content/branding/favicon.png","width":10240,"height":10234},
                         "primaryImageOfPage":{"@id":"http://www.atmhall.in/facilities.php#primaryimage"},
-                        "datePublished":"2019-06-12T06:02:33+00:00","dateModified":"2019-09-25T08:51:17+00:00","description":"ATM Hall in singanallur is a cheap and best marriage function hallwith dinning, kitchen facilities, furniture, powerback, room facilities"
+                        "datePublished":"2019-06-12T06:02:33+00:00",
+                        "dateModified":"2019-09-25T08:51:17+00:00",
+                        "description":"ATM Hall in singanallur is a cheap and best marriage function hallwith dinning, kitchen facilities, furniture, powerback, room facilities"
                     }
                 ]
             }
