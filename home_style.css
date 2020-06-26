@@ -130,7 +130,7 @@ body{
 
 /* Carousel stuff */
 .carousel-image-container{
-    padding: 0px;
+    padding: 0 1px;
 }
 
 .carousel{
@@ -151,7 +151,7 @@ body{
     display: block;
     opacity: 0;
     z-index: 999;
-    transition: all 0.4s;
+    transition: all 5s;
 }
 
 .carousel-inner > .carousel-alt-item{
@@ -160,7 +160,7 @@ body{
 
 .carousel-inner > .current{
     opacity: 1!important;
-    transition: all 0.4s;
+    transition: all 5s ease-in;
 }
 
 .conditional-display{
