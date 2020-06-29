@@ -2,20 +2,29 @@ branding FOLDER
     -This contains the image for the favicon
     -It is the small icon on the browser tab
     -The icon should be named "favicon.png"
+    -Recommended file size is 16x16 pixels. It can go upto a maximum of 32x32 pixels. 
+    -Maintain 1:1 Aspect Ratio.
 
 carouselImages FOLDER
     -This contains the images for the carosel (the slide show)
     -There can only be an even number of images here
     -Each image should be named as such - "number_alt text.JPG"
+    -Recommended file size is 1080x720 pixels.
+    -Maintain 3:2 aspect ratio.
 
 featuredCardImages FOLDER
     -This contains the images for the 3 cards at the bottom of the home page
     -It is advised that this folder only contains 3 images
     -Each image should be name as such = "number_title text_additional text_alt text.JPG"
+    -Recommended file size is 720x480 pixels.
+    -Maintain 3:2 Aspect Ratio.
 
 galleryImages FOLDER    
     -The images are split into three folders, each for one coloumn
     -The name should be names as such - "number_text to be displayed under_alt text.JPG"
+    -Any aspect ratio is okay.
+    -Recommended longest size 720px
+    -Keep file size under 500kb.
 
 siteContent.json
     -This one contains the content in the form "item":"content" 
