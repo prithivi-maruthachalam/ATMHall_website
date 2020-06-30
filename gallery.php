@@ -246,12 +246,12 @@
         <div class="fab-group-container">
             <a href="#top">
                 <div class="fab text-center" id="up-button">
-                <img src="images/icons/icons8-thick-arrow-pointing-up-96.png" class="glyphicon move-icon">
+                <img src="content/icons/icons8-thick-arrow-pointing-up-96.png" class="glyphicon move-icon">
                 </div>
             </a>
             <a href="#bottom">
                 <div class="fab text-right" id="down-button">
-                    <img src="images/icons/icons8-thick-arrow-pointing-down-96.png" class="move-icon">
+                    <img src="content/icons/icons8-thick-arrow-pointing-down-96.png" class="move-icon">
                 </div>
             </a>
         </div>
