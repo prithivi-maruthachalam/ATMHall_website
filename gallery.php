@@ -142,7 +142,7 @@
                     
                     <span class="display-1-bold-responsive font-gold negative-spacing">ATM Hall</span><br>
                     <span class="display-3-responsive font-lightGrey">Ashtalakshmi Thirumana Mahal</span><br>
-                    <span class="display-3-responsive font-lightGrey">அஷ்டலட்சுமி திருமண மஹால்</span>
+                    <span class="display-3-responsive font-lightGrey font-bold font-tamil">அஷ்டலட்சுமி திருமண மஹால்</span>
                 </div>
 
                 <div class="col-lg-6 text-center" role="navigation">
