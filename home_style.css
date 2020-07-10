@@ -35,19 +35,44 @@ body{
 
 .font-home-content1{
     color: #494847;
-    font-size: 17px;
+    font-size: 20px;
+    transition: all 0.6s;
 }
 
 .font-home-content1 > mark{
     color: #383838;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 20px;
     background: transparent;
+    transition: all 0.6s;
 }
 
 .font-home-content2{
     color: #575656;
     font-size: 20px;
+    transition: all 0.6s;
+}
+
+@media(max-width: 768px){
+    .font-home-content1{
+        color: #494847;
+        font-size: 17px;
+        transition: all 0.6s;
+    }
+    
+    .font-home-content1 > mark{
+        color: #383838;
+        font-weight: bold;
+        font-size: 17px;
+        background: transparent;
+        transition: all 0.6s;
+    }
+    
+    .font-home-content2{
+        color: #575656;
+        font-size: 17px;
+        transition: all 0.6s;
+    }
 }
 
 .main-content-padding{

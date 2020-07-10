@@ -131,6 +131,8 @@
                         <div class="additional-contact-container">
                             <div class="font-grey-lighter display-4-responsive">for Complaints &amp; Suggestions </div>
                             <div class="font-grey-lighter display-4-responsive"><?php echo $siteData["phone-number-for-complaints"]; ?></div>
+
+                            <div class="font-grey-lighter display-4-responsive padding-top-2"><p>புகார்கள் மற்றும் பரிந்துரைகளுக்கு <?php echo $siteData["phone-number-for-complaints"]; ?> என்ற எண்ணில் அழைக்கவும்</p></div>
                         </div>
                     </div>
 

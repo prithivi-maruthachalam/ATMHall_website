@@ -198,7 +198,7 @@
         <!--The welcome text part-->
         <div class="container main-content-container">
             <div class="col-md-6 content-text">
-                <h2 class="display-1-5-responsive"><?php echo $siteData["main-title-grey-before"]." "; ?><span class="display-1-5-responsive font-purple"><?php echo $siteData["main-title-highlight"]." ";?></span><?php echo $siteData["main-title-grey-after"];?></h2>
+                <h2 class="display-2-responsive"><?php echo $siteData["main-title-grey-before"]." "; ?><span class="display-2-responsive font-purple"><?php echo $siteData["main-title-highlight"]." ";?></span><?php echo $siteData["main-title-grey-after"];?></h2>
                 <p class="font-home-content1"><?php echo $siteData["main-content-body"];?></p>
             </div>
 
@@ -223,8 +223,8 @@
         <div class="container secondary-content-container text-center">
             <div class="container">
                 <hr class="hz-divider-major">
-                <div class="display-2 font-purple"><?php echo $siteData["secondary-content-title-line1"]; ?></div>
-                <div class="display-1-5-responsive font-gold-darker"><?php echo $siteData["secondary-content-title-line2"]; ?></div>
+                <div class="display-2-responsive font-purple"><?php echo $siteData["secondary-content-title-line1"]; ?></div>
+                <div class="display-2-responsive font-gold-darker"><?php echo $siteData["secondary-content-title-line2"]; ?></div>
                 <p class="font-home-content2 secondary-content-padding"><?php echo $siteData["secondary-content-body"]; ?></p>
             </div>
 

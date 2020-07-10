@@ -105,6 +105,9 @@
     .display-2{
         font-size: 30px;
     }
+    .display-2-responsive{
+        font-size: 30px;
+    }
     .display-3{
         font-size: 25px;
     }
@@ -199,6 +202,10 @@
             transition: font-size 0.6s;
         }
     
+        .display-2-responsive{
+            font-size: 27px;
+        }
+
         .display-3-responsive{
             font-size: 17px;
             transition: font-size 0.6s;
@@ -238,6 +245,10 @@
 /*-----------------------------------PADDING-------------------------------*/
     .padding-top-1{
         padding-top: 5px;
+    }
+
+    .padding-top-2{
+        padding-top: 10px;
     }
 
     .primary-footer-padding{
