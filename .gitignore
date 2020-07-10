@@ -6,3 +6,5 @@ images/
 *.png
 *.PNG
 *.json
+!content/icons/icons8-thick-arrow-pointing-down-96.png
+!content/icons/icons8-thick-arrow-pointing-up-96.png
