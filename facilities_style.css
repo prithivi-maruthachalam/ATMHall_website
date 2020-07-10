@@ -40,7 +40,7 @@ body{
 .list-container > div > mark{
     background-color:transparent;
     font-size: 23px;
-    color: rgb(202, 166, 74);;
+    color: rgb(209, 175, 24);
 }
 
 .list-container:hover .list-container > div > mark{
@@ -52,7 +52,7 @@ body{
     .list-container > div > mark{
         background-color:transparent;
         font-size: 17px;
-        color: rgb(202, 166, 74);;
+        color: rgb(209, 175, 24);
     }
 }
 

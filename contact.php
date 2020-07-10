@@ -125,7 +125,7 @@
             <div class="col-lg-6">
                 <div class="contact-info-container">
                     <div class="call-actions-container">
-                        <span class="font-purple display-1-5-responsive">Call Us</span>
+                        <span class="font-purple display-2-responsive">Call Us</span>
                         <p><a class="contact-phone" href="tel:<?php echo $siteData["phone-number"];?>"><button class="btn-phone btn-bottom"><span class="glyphicon glyphicon-earphone"></span>&nbsp;<?php echo $siteData["phone-number"]; ?></button></a></p>
 
                         <div class="additional-contact-container">
@@ -137,7 +137,8 @@
                     </div>
 
                     <div class="address-container">
-                        <span class="font-purple display-1-5-responsive">Find Us</span>
+                        <div class="font-grey display-3-responsive padding-bottom-2 padding-top-1">எங்களை பார்வையிட தயங்க வேண்டாம்</div>
+                        <span class="font-purple display-2-responsive">Feel free to find us at</span>
                         <div class="display-3-6-responsive font-grey"><?php echo $siteData["address-line-1"]; ?></div>
                         <div class="display-3-6-responsive font-grey"><?php echo $siteData["address-line-2"]; ?></div>
                         <div class="display-3-6-responsive font-grey"><?php echo $siteData["address-line-3"]; ?></div>

@@ -176,7 +176,7 @@ body{
     display: block;
     opacity: 0;
     z-index: 999;
-    transition: all 5s;
+    transition: all 4s;
 }
 
 .carousel-inner > .carousel-alt-item{
@@ -185,7 +185,7 @@ body{
 
 .carousel-inner > .current{
     opacity: 1!important;
-    transition: all 5s ease-in;
+    transition: all 4s ease-in;
 }
 
 .conditional-display{

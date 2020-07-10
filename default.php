@@ -309,7 +309,7 @@
                     var currentIndex = currentImage.index();
 
                     var currentItem = currentImage.prop('classList');
-                    if(classList.contains('carousel-alt-item')){
+                    if(currentItem.contains('carousel-alt-item')){
                         var height = currentImage.next('.item').prop('scrollHeight');
                         carousel.height(height);
                         currentImage.next('.item').addClass('current');
@@ -351,7 +351,6 @@
                 if(window.innerWidth > 992){
                     var nextItem = currentImage.next('.item');
                     var classList = nextItem.prop('classList');
-                    console.log(classList);
                     if(classList.contains('carousel-alt-item')){
                         nextItem = nextItem.next('.item');
                     }

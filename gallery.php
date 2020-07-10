@@ -177,7 +177,7 @@
                         echo '<div class="gallery-image-card">';
                             echo '<img src="'.$imageObject[3].'" class="img-responsive" alt="'.$imageObject[2].'">';
                             echo '<div class="gallery-img-tag-container text-center">';
-                                echo '<span class="display-4">'.$imageObject[1].'</span>';
+                                echo '<span class="display-5">'.$imageObject[1].'</span>';
                             echo '</div>';
                         echo '</div>';
                     }
@@ -190,7 +190,7 @@
                         echo '<div class="gallery-image-card">';
                             echo '<img src="'.$imageObject[3].'" class="img-responsive" alt="'.$imageObject[2].'">';
                             echo '<div class="gallery-img-tag-container text-center">';
-                                echo '<span class="display-4">'.$imageObject[1].'</span>';
+                                echo '<span class="display-5">'.$imageObject[1].'</span>';
                             echo '</div>';
                         echo '</div>';
                     }
@@ -203,7 +203,7 @@
                         echo '<div class="gallery-image-card">';
                             echo '<img src="'.$imageObject[3].'" class="img-responsive" alt="'.$imageObject[2].'">';
                             echo '<div class="gallery-img-tag-container text-center">';
-                                echo '<span class="display-4">'.$imageObject[1].'</span>';
+                                echo '<span class="display-5">'.$imageObject[1].'</span>';
                             echo '</div>';
                         echo '</div>';
                     }
