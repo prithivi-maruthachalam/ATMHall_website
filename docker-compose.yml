@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  dev-server:
+    image: atmhall:site
+    volumes:
+    - ./dist:/dist
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8090:80
+
