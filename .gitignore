@@ -7,5 +7,7 @@ images/
 *.PNG
 *.json
 
+.DS_Store
+
 !dist/*
 !dist/
