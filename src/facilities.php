@@ -102,7 +102,7 @@
                     </div>
                     
                     <ul class="nav nav-tabs nav-justified nav-hide nav-negative-margin" id="navigationA">
-                        <li class="nav-item"><a class="navigationItem" href="default.php">Home</a></li>
+                        <li class="nav-item"><a class="navigationItem" href="index.php">Home</a></li>
                         <li class="nav-item active"><a class="navigationItem" href="facilities.php">Facilities</a></li>
                         <li class="nav-item"><a class="navigationItem" href="gallery.php">Gallery</a></li>
                         <li class="nav-item"><a class="navigationItem" href="contact.php">Contact</a></li>
@@ -156,7 +156,7 @@
             <div class="col-lg-5 bottom-nav-container primary-footer-padding">
                 <span class="font-lightGrey display-3-5-responsive title-nav-alignment-padding responsive-hide">Quick Links</span>
                 <ul class="nav nav-tabs footer-nav" id="navigation">
-                    <li class="nav-item"><a class="navigationItem-footer" href="default.php">Home</a></li>
+                    <li class="nav-item"><a class="navigationItem-footer" href="index.php">Home</a></li>
                     <li class="nav-item"><a class="navigationItem-footer nav-footer-active" href="facilities.php">Facilities</a></li>
                     <li class="nav-item"><a class="navigationItem-footer" href="gallery.php">Gallery</a></li>
                     <li class="nav-item"><a class="navigationItem-footer" href="contact.php">Contact</a></li>

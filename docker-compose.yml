@@ -4,7 +4,7 @@ services:
   dev-server:
     image: atmhall:site
     volumes:
-    - ./dist:/dist
+    - ./src:/var/www/html
     build:
       context: .
       dockerfile: Dockerfile
