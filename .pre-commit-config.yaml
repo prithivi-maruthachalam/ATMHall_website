@@ -1,0 +1,10 @@
+repos:
+  - repo: local
+    hooks:
+      - id: build-static-site
+        name: Build static site to docs
+        entry: bin/build.sh
+        language: script
+        types: [file]
+        pass_filenames: false
+
