@@ -5,7 +5,7 @@
 
     //the final array for holding the 3 coloumns of images
     $imageObjectsList = array();
-    
+
     //go through subfolder for each coloumn
     foreach($subDirs as $subDir){
         if($subDir == ".." || $subDir == "."){
@@ -26,7 +26,7 @@
                 $imageObject[0] = (int)explode("/",$imageObject[0])[1];
                 $imageObject[2] = explode(".",$imageObject[2])[0];
                 $imageObject[3] = $imageURL;
-                
+
                 array_push($imageObjects,$imageObject);
             }
         }
@@ -40,14 +40,14 @@
         array_push($imageObjectsList,$imageObjects);
     }
     //this is going to hold all our images
-    
+
     //$imageObjectsList contains 3 lists, which are by themselves, lists of our image objects
 
     //each image object contains
     // 0 => number of the image to indicate order
     // 1 => description/tag for the image to be displayed on the card, under the image
     // 2 => alt text for the image - for SEO
-    // 3 => the relative URL of the image 
+    // 3 => the relative URL of the image
 
     //read JSON file for content
     $filePathForContent = "content/siteContent.json";
@@ -78,7 +78,7 @@
         <meta property="og:url" content="http://www.atmhall.in/gallery.php" />
         <meta property="og:site_name" content="ATM Hall" />
         <meta property="og:image" content="http://www.atmhall.in/content/branding/favicon.png" />
-        
+
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:description" content="<?php echo $siteData["twitter-description-SEO"]; ?>" />
         <meta name="twitter:title" content="<?php echo $siteData["twitter-short-description-for-SEO"]; ?>" />
@@ -123,52 +123,24 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
         <link rel="stylesheet" href="gallery_style.css">
         <link rel="stylesheet" href="static_styling.css">
-        
+
         <title><?php echo $siteData["page-title-for-gallery-page"]; ?></title>
 
         <link rel="icon" href="content/branding/favicon.png" type="image/png">
         <link href="https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@700&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-    
-    </head> 
+
+    </head>
 
     <body>
-        <!--this is the header-->
-        <header class="main-header" id="primaryAccentBackground">
-            <div class="container">
-                <div class="col-lg-6 top-logo-align">
-                    <div class="topBarSpacing"></div>
-                    
-                    <span class="display-1-bold-responsive font-gold negative-spacing">ATM Hall</span><br>
-                    <span class="display-3-responsive font-lightGrey">Ashtalakshmi Thirumana Mahal</span><br>
-                    <span class="display-3-responsive font-lightGrey font-bold font-tamil">அஷ்டலட்சுமி திருமண மஹால்</span>
-                </div>
-
-                <div class="col-lg-6 text-center" role="navigation">
-                    <div class="topBarSpacing"></div>
-                    <span class="font-gold display-2 responsive-hide extra-mid-padding">For Booking</span>
-                    <a class="contact-phone" href="tel:<?php echo $siteData["phone-number"];?>"><button class="btn-phone btn-top"><span class="glyphicon glyphicon-earphone"></span>&nbsp;<?php echo $siteData["phone-number"]; ?></button></a>
-
-                    <div class="menu-container" onclick="collapseNav()">
-                        <p>Menu <span class="glyphicon glyphicon-menu-hamburger"></p>
-                    </div>
-                    
-                    <ul class="nav nav-tabs nav-justified nav-hide nav-negative-margin" id="navigationA">
-                        <li class="nav-item"><a class="navigationItem" href="index.php">Home</a></li>
-                        <li class="nav-item"><a class="navigationItem" href="facilities.php">Facilities</a></li>
-                        <li class="nav-item active"><a class="navigationItem" href="gallery.php">Gallery</a></li>
-                        <li class="nav-item"><a class="navigationItem" href="contact.php">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </header>
+        <?php require 'header.php'; ?>
 
         <!--title for facilities-->
         <div class="container text-center page-title-text">
             <h1 class="display-1-5-responsive font-purple">Gallery</h1>
         </div>
-        
+
         <!--The actual image content-->
         <div class="container main-images-container">
             <div class="gallery-flex-coloumn">
@@ -183,7 +155,7 @@
                     }
                 ?>
             </div>
-            
+
             <div class="gallery-flex-coloumn">
                 <?php
                     foreach($imageObjectsList[1] as $imageObject){
@@ -211,37 +183,7 @@
             </div>
         </div>
 
-        <!--The footer-->
-        <footer class="container-fluid footer-margin" id="primaryAccentBackground">
-            <div class="col-lg-5 bottom-nav-container primary-footer-padding" id="bottom">
-                <span class="font-lightGrey display-3-5-responsive title-nav-alignment-padding responsive-hide">Quick Links</span>
-                <ul class="nav nav-tabs footer-nav" id="navigation">
-                    <li class="nav-item"><a class="navigationItem-footer" href="index.php">Home</a></li>
-                    <li class="nav-item"><a class="navigationItem-footer" href="facilities.php">Facilities</a></li>
-                    <li class="nav-item"><a class="navigationItem-footer nav-footer-active" href="gallery.php">Gallery</a></li>
-                    <li class="nav-item"><a class="navigationItem-footer" href="contact.php">Contact</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3 responsive-footer-alignment primary-footer-padding">
-                <span class="display-3-responsive font-lightGrey">Address</span>
-                <div class="font-lightGrey display-5"><?php echo $siteData["address-line-1"]; ?></div>
-                <div class="font-lightGrey display-5"><?php echo $siteData["address-line-2"]; ?></div>
-                <div class="font-lightGrey display-5"><?php echo $siteData["address-line-3"]; ?></div>
-            </div>
-            <div class="col-lg-4 footer-phone-container primary-footer-padding">
-                <span class="font-gold display-3-responsive responsive-hide">For Booking</span> 
-                <p class="padding-top-1"><a class="contact-phone" href="tel:<?php echo $siteData["phone-number"];?>"><button class="btn-phone btn-bottom"><span class="glyphicon glyphicon-earphone"></span>&nbsp;<?php echo $siteData["phone-number"]; ?></button></a></p>
-            </div>
-        </footer>
-
-        <!--footer for the developer-->
-        <footer class="forDeveloper text-center">
-            <div class="container">
-                <a href="https://www.linkedin.com/in/prithivi-maruthachalam-3b8196179/" target="_blank" class="developer-link display-5">A 
-                    <span class="developer-link-name">&nbsp; Prithivi Maruthachalam &nbsp;</span>
-                production </a>
-            </div>
-        </footer>
+        <?php require 'footer.php'; ?>
 
         <!--Flaoting action button to go up and down-->
         <div class="fab-group-container">
@@ -256,7 +198,7 @@
                 </div>
             </a>
         </div>
-        
+
         <!--Scripts that access body elements-->
         <script type="text/javascript">
             var upButton = document.getElementById("up-button");
@@ -273,7 +215,7 @@
                 } else {
                     upButton.style.display = "none";
                 }
-                
+
                 var bottomScroll = (document.documentElement.scrollHeight - document.documentElement.scrollTop);
                 if(bottomScroll > 1470) {
                     downButton.style.display = "block";

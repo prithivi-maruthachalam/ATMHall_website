@@ -7,4 +7,3 @@ repos:
         language: script
         types: [file]
         pass_filenames: false
-

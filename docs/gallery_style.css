@@ -34,7 +34,7 @@ body{
 
         transition: flex 0.4s, width 0.4s;
     }
-    
+
 }
 
 @media(max-width: 992px){
@@ -45,7 +45,7 @@ body{
 
         transition: flex 0.4s, width 0.4s;
     }
-    
+
 }
 
 .footer-margin{

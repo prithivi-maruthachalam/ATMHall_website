@@ -16,7 +16,7 @@
 }
 
 .btn-phone {
-    color: #6e124f; 
+    color: #6e124f;
     background-color: rgb(202, 166, 74);;
     border: none;
     font-weight: 500px;
@@ -195,13 +195,13 @@
             font-size: 25px;
             transition: all 0.4s;
         }
-    
+
         .display-1-bold-responsive{
             font-size: 30px;
             font-weight: bold;
             transition: font-size 0.6s;
         }
-    
+
         .display-2-responsive{
             font-size: 27px;
         }
@@ -210,7 +210,7 @@
             font-size: 17px;
             transition: font-size 0.6s;
         }
-    
+
         .display-3-5-responsive{
             font-size: 22px;
             transition: font-size 0.6s;
@@ -228,7 +228,7 @@
         .display-3-6-responsive{
             font-size: 20px;
         }
-    
+
     }
 /*-----------------------------------FONT SIZES-------------------------------*/
 
@@ -271,16 +271,16 @@
         height: 0px;
         transition: height 0.6s;
     }
-    
+
     .spacingDiv1{
         height: 0px;
         transition: height 0.6s;
     }
-    
+
     .page-title-text{
         padding: 0px;
     }
-    
+
     .spacingDiv2{
         height: 40px;
     }
@@ -393,7 +393,7 @@
         text-align: center;
         transition: text-align 0.6s;
     }
-    
+
     @media(min-width: 1200px){
         .top-logo-align{
             text-align: left;
@@ -411,7 +411,7 @@
     }
 
     .footer-nav > .nav-item > a.navigationItem-footer:hover,
-    .footer-nav > .nav-item > a.navigationItem-footer:focus, 
+    .footer-nav > .nav-item > a.navigationItem-footer:focus,
     .footer-nav > .nav-item > a.nav-footer-active{
         color: rgb(209, 175, 24)!important;
         background-color: #6e124f!important;
@@ -447,7 +447,7 @@
         }
 
         .footer-nav > .nav-item > a.navigationItem-footer:hover,
-        .footer-nav > .nav-item > a.navigationItem-footer:focus, 
+        .footer-nav > .nav-item > a.navigationItem-footer:focus,
         .footer-nav > .nav-item > a.nav-footer-active{
             color: rgb(209, 175, 24)!important;
             background-color: #6e124f!important;
@@ -630,5 +630,3 @@
     width: 20%;
 }
 /*-----------------------------------DIVIDERS-------------------------------*/
-
-
