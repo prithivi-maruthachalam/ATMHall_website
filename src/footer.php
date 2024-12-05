@@ -3,10 +3,10 @@
             <div class="col-lg-5 bottom-nav-container primary-footer-padding">
                 <span class="font-lightGrey display-3-5-responsive title-nav-alignment-padding responsive-hide">Quick Links</span>
                 <ul class="nav nav-tabs footer-nav" id="navigation">
-                    <li class="nav-item"><a class="navigationItem-footer nav-footer-active" href="index.php">Home</a></li>
-                    <li class="nav-item"><a class="navigationItem-footer" href="facilities.php">Facilities</a></li>
-                    <li class="nav-item"><a class="navigationItem-footer" href="gallery.php">Gallery</a></li>
-                    <li class="nav-item"><a class="navigationItem-footer" href="contact.php">Contact</a></li>
+                    <li class="nav-item nav-item-home"><a class="navigationItem-footer" href="index.php">Home</a></li>
+                    <li class="nav-item nav-item-facilities"><a class="navigationItem-footer" href="facilities.php">Facilities</a></li>
+                    <li class="nav-item nav-item-gallery"><a class="navigationItem-footer" href="gallery.php">Gallery</a></li>
+                    <li class="nav-item nav-item-contact"><a class="navigationItem-footer" href="contact.php">Contact</a></li>
                 </ul>
             </div>
             <div class="col-lg-3 responsive-footer-alignment primary-footer-padding">

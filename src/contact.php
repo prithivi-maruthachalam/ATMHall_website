@@ -143,6 +143,13 @@
             }
         </script>
 
+        <!-- script to set active nav item -->
+        <script type="text/javascript">
+          var navItemList = document.getElementsByClassName("nav-item-contact");
+          navItemList[0].classList.add("active"); // header
+          navItemList[1].getElementsByClassName("navigationItem-footer")[0].classList.add("nav-footer-active"); // footer
+        </script>
+
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140853074-1">
         </script>

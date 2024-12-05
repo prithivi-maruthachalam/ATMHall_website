@@ -20,10 +20,10 @@
                     </div>
                     
                     <ul class="nav nav-tabs nav-justified nav-hide nav-negative-margin" id="navigationA">
-                        <li class="nav-item active"><a class="navigationItem" href="index.php">Home</a></li>
-                        <li class="nav-item"><a class="navigationItem" href="facilities.php">Facilities</a></li>
-                        <li class="nav-item"><a class="navigationItem" href="gallery.php">Gallery</a></li>
-                        <li class="nav-item"><a class="navigationItem" href="contact.php">Contact</a></li>
+                        <li class="nav-item nav-item-home"><a class="navigationItem" href="index.php">Home</a></li>
+                        <li class="nav-item nav-item-facilities"><a class="navigationItem" href="facilities.php">Facilities</a></li>
+                        <li class="nav-item nav-item-gallery"><a class="navigationItem" href="gallery.php">Gallery</a></li>
+                        <li class="nav-item nav-item-contact"><a class="navigationItem" href="contact.php">Contact</a></li>
                     </ul>
                 </div>
             </div>
