@@ -146,7 +146,8 @@
                 <div class="col-lg-6 text-center" role="navigation">
                     <div class="topBarSpacing"></div>
                     <span class="font-gold display-2 responsive-hide extra-mid-padding">For Booking</span>
-                    <a class="contact-phone" href="tel:<?php echo $siteData["phone-number"];?>"><button class="btn-phone btn-top"><span class="glyphicon glyphicon-earphone"></span>&nbsp;<?php echo $siteData["phone-number"]; ?></button></a>
+                    <a class="contact-phone" href="tel:<?php echo $siteData["phone-number"][0];?>"><button class="btn-phone btn-top"><span class="glyphicon glyphicon-earphone"></span>&nbsp;<?php echo $siteData["phone-number"][0]; ?></button></a>
+                    <a class="contact-phone" href="tel:<?php echo $siteData["phone-number"][1];?>"><button class="btn-phone btn-top"><span class="glyphicon glyphicon-earphone"></span>&nbsp;<?php echo $siteData["phone-number"][1]; ?></button></a>
 
                     <div class="menu-container" onclick="collapseNav()">
                         <p>Menu <span class="glyphicon glyphicon-menu-hamburger"></p>
@@ -271,7 +272,8 @@
             </div>
             <div class="col-lg-4 footer-phone-container primary-footer-padding">
                 <span class="font-gold display-3-responsive responsive-hide">For Booking</span> 
-                <p class="padding-top-1"><a class="contact-phone" href="tel:<?php echo $siteData["phone-number"];?>"><button class="btn-phone btn-bottom"><span class="glyphicon glyphicon-earphone"></span>&nbsp;<?php echo $siteData["phone-number"]; ?></button></a></p>
+                <p class="padding-top-1"><a class="contact-phone" href="tel:<?php echo $siteData["phone-number"][0];?>"><button class="btn-phone btn-bottom"><span class="glyphicon glyphicon-earphone"></span>&nbsp;<?php echo $siteData["phone-number"][0]; ?></button></a></p>
+                <p class="padding-top-1"><a class="contact-phone" href="tel:<?php echo $siteData["phone-number"][1];?>"><button class="btn-phone btn-bottom"><span class="glyphicon glyphicon-earphone"></span>&nbsp;<?php echo $siteData["phone-number"][1]; ?></button></a></p>
             </div>
         </footer>
 

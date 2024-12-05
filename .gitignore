@@ -5,7 +5,6 @@ images/
 *.JPEG
 *.png
 *.PNG
-*.json
 
 .DS_Store
 

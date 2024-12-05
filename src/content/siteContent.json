@@ -1,0 +1,84 @@
+{
+    "description-for-SEO": "Ashtalakshmi Thirumana Mahal in singanullar is simple and authentic wedding/party hall with competative rent. Located in heart of singanallur, Coimbatore",
+    "website-short-description-for-SEO": "Marriage Hall in Singanallur, Kalyana mandapam in Singanallur - ATM Hall Singanallur",
+    "twitter-description-SEO":"ATM Hall is located in main of singanallur. Easily accesible for peoples around Singanallur, Ondipudur, Sulur",
+    "twitter-short-description-for-SEO":"Marriage Hall in Singanallur, Kalyana mandapam in Singanallur, Ondipudur, Sulur - ATM Hall Singanallur",
+
+    "page-title-for-home-page": "ATM Hall | Home",
+    "page-title-for-facilities-page": "ATM Hall | Facilities",
+    "page-title-for-gallery-page": "ATM Hall | Gallery",
+    "page-title-for-contact-page": "ATM Hall | Contact",
+    
+    "phone-number": ["+91 8940401780", "+91 8940304674"],
+    "phone-number-for-complaints": "+91 9843023376",
+    
+    "address-line-1": "303, Trichy Road, Singanallur",
+    "address-line-2": "Coimbatore",
+    "address-line-3": "Tamil Nadu 641005",
+    
+    "main-title-grey-before": "Welcome to",
+    "main-title-highlight": "Ashtalakshmi Thirumana Mahal",
+    "main-title-grey-after": "",
+
+    "main-content-body": "ATM Hall invites you to host your <mark>weddings, receptions, marriages, birthday parties, engagements, naming ceremonies</mark> and other functions. ATM Hall is also ideal hall for <mark>exhibitions, sales</mark> and other <mark>promotional events</mark>. Functions have been continuously held here <mark>since 1988</mark>, which by itself is a proof of <mark>trust, love for its clients</mark> and the <mark>joy</mark> of holding an event here. It has been renovated recently which makes it even more <mark>comfortable, convenient</mark> and any event here would be <mark>memorable</mark>.",
+    "featured-items": [
+        {
+            "highlighted": "150+ Seats",
+            "small-grey": "in Main Hall"
+        },
+        {
+            "highlighted": "80+ Seats",
+            "small-grey": "in Dining"
+        },
+        {
+            "highlighted": "AC Rooms",
+            "small-grey": "not 1 but 2!"
+        }
+    ],
+
+    "secondary-content-title-line1": "Discover the Best",
+    "secondary-content-title-line2": "Wedding Hall in Budget in Singanallur Coimbatore",
+    "secondary-content-body": "When looking for the perfect kalyana mandapam in Coimbatore, you should prefer a classic place where culture blends with modernity. To celebrate the start of your marital bliss with new life of joy, happiness and togetherness.",
+    
+
+
+    "facilities-features": [
+        {"feature": "150+ seats in Main Hall"},
+        {"feature": "90+ Seats in Dining Hall"},
+        {"feature": "Air Cooled"},
+        {"feature": "Kitchen with complimentary vessels"},
+        {"feature": "Generator Power Backup"},
+        {"feature": "Complimentary Tables & Chains"}
+    ],
+
+    "facilities-group": [
+        {
+            "title": "Space & Capacity",
+            "items":[
+                {"main-text": "Main hall has <mark>seating</mark> facility of <mark>150</mark>", "extra-text-optional": ""},
+                {"main-text": "<mark>Dining</mark> can accomodate <mark>90 people</mark>", "extra-text-optional": ""},
+                {"main-text": "<mark>Welcome Area</mark> can take <mark>50 persons</mark>.", "extra-text-optional": ""},
+                {"main-text": "There are <mark>air-conditioned</mark> rooms", "extra-text-optional": "These rooms can also be used as Bride & Groom rooms"},
+                {"main-text": "A <mark>kitchen</mark> is <mark>attached</mark> to the facility ", "extra-text-optional": "Catering from outside also allowed"}
+            ]
+        },
+        {
+            "title": "Just for You",
+            "items":[
+                {"main-text": "The main hall is <mark>air cooled</mark> with tent cooler", "extra-text-optional": ""},
+                {"main-text": "Power backup is available with a <mark>modern generator</mark>", "extra-text-optional": ""},
+                {"main-text": "Furniture like <mark>chairs</mark>, <mark>dining</mark> & <mark>tables</mark> are <mark>free</mark> for you.", "extra-text-optional": ""},
+                {"main-text": "Also <mark>vessels</mark> for cooking and serving are also <mark>free for use</mark>", "extra-text-optional": ""}
+            ]
+        },
+        {
+            "title": "Here to Help",
+            "items":[
+                {"main-text": "<mark>Back drops</mark> can be arranged at reasonable rates", "extra-text-optional": "You can make your own arrangements too"},
+                {"main-text": "Also people for <mark>mangala vaadhyam</mark>, <mark>catering</mark>, <mark>photography</mark> and other things can be referred at reasonable rates.", "extra-text-optional": ""},
+                {"main-text": "<mark>Audio-Video system</mark> and <mark>projector</mark> is also available at nominal cost.", "extra-text-optional": ""}
+            ]
+        }
+    ]
+
+}
