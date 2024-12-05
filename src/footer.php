@@ -15,10 +15,10 @@
                 <div class="font-lightGrey display-5"><?php echo $siteData["address-line-2"]; ?></div>
                 <div class="font-lightGrey display-5"><?php echo $siteData["address-line-3"]; ?></div>
             </div>
-            <div class="col-lg-4 footer-phone-container primary-footer-padding">
-                <span class="font-gold display-3-responsive responsive-hide">For Booking</span> 
-                <p class="padding-top-1"><a class="contact-phone" href="tel:<?php echo $siteData["phone-number"][0];?>"><button class="btn-phone btn-bottom"><span class="glyphicon glyphicon-earphone"></span>&nbsp;<?php echo $siteData["phone-number"][0]; ?></button></a></p>
-                <p class="padding-top-1"><a class="contact-phone" href="tel:<?php echo $siteData["phone-number"][1];?>"><button class="btn-phone btn-bottom"><span class="glyphicon glyphicon-earphone"></span>&nbsp;<?php echo $siteData["phone-number"][1]; ?></button></a></p>
+            <div class="col-lg-4 footer-phone-container primary-footer-padding" style="margin-bottom: 15px;">
+                <span class="font-gold display-3-responsive responsive-hide">For Booking</span>
+                <a class="contact-phone" href="tel:<?php echo $siteData["phone-number"][0];?>"><button class="btn-phone btn-bottom"><span class="glyphicon glyphicon-earphone"></span>&nbsp;<?php echo $siteData["phone-number"][0]; ?></button></a>
+                <a class="contact-phone" href="tel:<?php echo $siteData["phone-number"][1];?>"><button class="btn-phone btn-bottom"><span class="glyphicon glyphicon-earphone"></span>&nbsp;<?php echo $siteData["phone-number"][1]; ?></button></a>
             </div>
         </footer>
 
