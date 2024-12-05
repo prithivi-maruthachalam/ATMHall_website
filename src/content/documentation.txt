@@ -4,7 +4,7 @@ branding FOLDER
     -The icon should be named "favicon.png"
     -The ".png" part is added by default in windows, but is not displayed.
     -This above convention must be followed exactly.
-    -Recommended file size is 16x16 pixels. It can go upto a maximum of 32x32 pixels. 
+    -Recommended file size is 16x16 pixels. It can go upto a maximum of 32x32 pixels.
     -Maintain 1:1 Aspect Ratio.
 
 carouselImages FOLDER
@@ -25,7 +25,7 @@ featuredCardImages FOLDER
     -Recommended file size is 720x480 pixels.
     -Maintain 3:2 Aspect Ratio.
 
-galleryImages FOLDER    
+galleryImages FOLDER
     -The images are split into three folders, each for one coloumn
     -The images should be named as such - "number_text to be displayed under_alt text.JPG"
     -The file extension (.JPG) can be any valid image file extension.
@@ -35,7 +35,7 @@ galleryImages FOLDER
     -Keep file size under 500kb.
 
 siteContent.json
-    -This one contains the content in the form "item":"content" 
+    -This one contains the content in the form "item":"content"
     -The {} - indicate one entire block or object
     -The [] - indicate a list of items that are for the same kind of item, but with different content
     -Seperate consecutive objects using commas
@@ -45,7 +45,7 @@ siteContent.json
     -EVEN A SMALL ERROR IN THIS FILE WILL CAUSE THE SITE TO BE PREDOMINANTLY EMPTY
 
 siteContentBackup.json
-    -If there is an error in the siteContent.json file, it will automatically 
-        try to use this backup version to fill the site with content, so 
+    -If there is an error in the siteContent.json file, it will automatically
+        try to use this backup version to fill the site with content, so
         COPY THE siteContent.json FILE TO siteContentBackup.json WHENEVER siteContent.json
         IS AT A WORKING STATE

@@ -2,7 +2,8 @@
 
 echo "Building static site..."
 docker-compose up -d dev-server
-rm -rf dist/*
+rm -rf docs/*.html
+rm -rf docs/*.css
 wget \
   --mirror \
   --convert-links \
@@ -12,5 +13,5 @@ wget \
   --recursive \
   --cut-dirs=10 \
   --no-host-directories \
-  http://localhost:8090 -P ./dist
+  http://localhost:8090 -P ./docs
 docker-compose down
