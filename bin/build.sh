@@ -2,8 +2,7 @@
 
 echo "Building static site..."
 docker-compose up -d dev-server
-rm -rf docs/*.html
-rm -rf docs/*.css
+find ./docs/ ! -name 'CNAME' -type f -exec rm -f {} +
 wget \
   --mirror \
   --convert-links \
