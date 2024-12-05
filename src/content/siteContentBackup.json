@@ -4,7 +4,7 @@
     "page-title-for-gallery-page": "ATM Hall | Gallery",
     "page-title-for-contact-page": "ATM Hall | Contact",
 
-    "phone-number": "+91 8940401780",
+    "phone-number": ["+91 8940401780", "+91 8940304674"],
     "phone-number-for-complaints": "+91 9843023376",
 
     "address-line-1": "303, Trichy Road, Singanallur",

@@ -4,6 +4,9 @@ echo "Building static site..."
 docker-compose up -d dev-server
 rm -rf docs/*.html
 rm -rf docs/*.css
+rm -rf docs/*.jgp
+rm -rf docs/*.jgep
+rm -rf docs/*.JPG
 wget \
   --mirror \
   --convert-links \
