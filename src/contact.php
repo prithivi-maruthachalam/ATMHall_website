@@ -84,7 +84,7 @@
         <?php require 'header.php'; ?>
 
         <!--title for facilities-->
-        <div class="container text-center page-title-text">
+        <div class="container text-center page-title-text hidden-xs hidden-sm hidden-md">
             <h1 class="display-1-5-responsive font-purple">Contact Us</h1>
         </div>
 

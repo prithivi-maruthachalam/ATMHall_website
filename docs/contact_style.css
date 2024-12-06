@@ -25,7 +25,7 @@
     }
 
     .contact-major-content{
-        padding-top: 5px;
+        padding-top: 30px;
         padding-bottom: 20px;
     }
 }
@@ -35,6 +35,10 @@
         padding-top: 30px;
         text-align: center;
         transition: padding 0.4s;
+    }
+
+    .contact-major-content {
+      padding-top: 30px;
     }
 }
 
