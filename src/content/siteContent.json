@@ -15,16 +15,12 @@
     "address-line-2": "Coimbatore",
     "address-line-3": "Tamil Nadu 641005",
     
-    "main-title-grey-before": "Welcome to",
-    "main-title-highlight": "Ashtalakshmi Thirumana Mahal",
+    "main-title-grey-before": "You can book our hall<br>",
+    "main-title-highlight": "with or without food",
     "main-title-grey-after": "",
 
     "main-content-body": "ATM Hall invites you to host your <mark>weddings, receptions, marriages, birthday parties, engagements, naming ceremonies</mark> and other functions. ATM Hall is also ideal hall for <mark>exhibitions, sales</mark> and other <mark>promotional events</mark>. Functions have been continuously held here <mark>since 1988</mark>, which by itself is a proof of <mark>trust, love for its clients</mark> and the <mark>joy</mark> of holding an event here. It has been renovated recently which makes it even more <mark>comfortable, convenient</mark> and any event here would be <mark>memorable</mark>.",
     "featured-items": [
-         {
-            "highlighted": "You can book our hall<br>with food or without food",
-            "small-grey": ""
-        },
         {
             "highlighted": "150 Seats",
             "small-grey": "in Main Hall"
